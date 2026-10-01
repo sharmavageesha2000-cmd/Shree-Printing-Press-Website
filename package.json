@@ -1,0 +1,20 @@
+{
+  "name": "shree-printing-press-website",
+  "version": "1.0.0",
+  "description": "Shree Printing Press - Commercial Printing, Packaging & Design Solutions",
+  "main": "serve.js",
+  "scripts": {
+    "start": "node serve.js",
+    "dev": "node serve.js",
+    "build:client": "npm --prefix client run build",
+    "start:server": "node server/server.js"
+  },
+  "keywords": [
+    "printing-press",
+    "commercial-printing",
+    "packaging",
+    "design"
+  ],
+  "author": "Shree Printing Press",
+  "license": "ISC"
+}

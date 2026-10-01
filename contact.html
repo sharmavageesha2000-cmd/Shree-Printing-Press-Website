@@ -1,0 +1,414 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us & Get Free Quote | Shree Printing Press</title>
+  <meta name="description" content="Get in touch with Shree Printing Press via Address, Phone, WhatsApp, Email, or Contact Form. Operating Hours: Mon-Sat 10:00 am to 8:00 pm. View Google Map location.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Google Fonts: Outfit (Headings) + Plus Jakarta Sans (Body) + Space Grotesk (Accents) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS v3 Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            body: ['"Plus Jakarta Sans"', 'sans-serif'],
+            accent: ['"Space Grotesk"', 'sans-serif']
+          },
+          colors: {
+            brand: {
+              cyan: '#00B4D8',
+              magenta: '#E60067',
+              yellow: '#F59E0B',
+              dark: '#0F172A',
+              navy: '#1E293B',
+              royal: '#2563EB',
+              purple: '#7C3AED'
+            },
+            cmyk: {
+              c: '#00B4D8',
+              m: '#E60067',
+              y: '#F59E0B',
+              k: '#0F172A'
+            }
+          },
+          animation: {
+            'gradient-x': 'gradientX 6s ease infinite'
+          },
+          keyframes: {
+            gradientX: {
+              '0%, 100%': { 'background-size': '200% 200%', 'background-position': 'left center' },
+              '50%': { 'background-size': '200% 200%', 'background-position': 'right center' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .bg-cmyk-stripe {
+      background: linear-gradient(90deg, #00B4D8 0%, #00B4D8 25%, #E60067 25%, #E60067 50%, #F59E0B 50%, #F59E0B 75%, #0F172A 75%, #0F172A 100%);
+    }
+    .mobile-menu-open {
+      max-height: 520px !important;
+      opacity: 1 !important;
+      pointer-events: auto !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Top CMYK Dynamic Spectrum Bar -->
+  <div class="h-1.5 w-full bg-cmyk-stripe relative z-50"></div>
+
+  <!-- Announcement Bar (Light Theme) -->
+  <div class="bg-white border-b border-slate-200/80 py-2.5 px-4 text-xs font-accent text-slate-600">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-cyan-50 text-cyan-700 border border-cyan-200">
+          <span class="w-1.5 h-1.5 rounded-full bg-cyan-500 animate-ping"></span>
+          LIVE PRESS FACILITY
+        </span>
+        <span class="hidden sm:inline text-slate-500">Heidelberg Speedmaster & HP Indigo units online • 24H Rush Orders Accepted</span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-600 font-medium">
+        <span class="flex items-center gap-1">
+          <span class="text-amber-500">🕒</span> Mon-Sat 10:00 am - 8:00 pm
+        </span>
+        <a href="tel:8005557746" class="hover:text-brand-magenta transition-colors flex items-center gap-1 font-bold text-slate-900">
+          <span class="text-brand-magenta">📞</span> (800) 555-PRINT
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header (Light Theme) -->
+  <header class="header sticky top-0 z-40 backdrop-blur-xl bg-white/90 border-b border-slate-200/80 transition-all duration-300 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo & Brand Name -->
+        <a href="index.html" class="logo flex items-center gap-3.5 group" aria-label="Shree Printing Press Home">
+          <div class="relative">
+            <div class="absolute -inset-1 bg-gradient-to-r from-brand-cyan via-brand-magenta to-brand-yellow rounded-2xl blur-sm opacity-60 group-hover:opacity-100 transition duration-300"></div>
+            <img src="images/logo.png" alt="Shree Printing Press Logo" class="relative w-12 h-12 rounded-xl object-contain bg-white p-0.5 shadow-md border border-slate-200 transform group-hover:scale-105 transition duration-300">
+          </div>
+          <div class="flex flex-col">
+            <span class="font-heading font-black text-2xl tracking-tight text-slate-900 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-brand-cyan group-hover:via-brand-magenta group-hover:to-brand-yellow group-hover:bg-clip-text transition-all duration-300">
+              SHREE <span class="text-brand-magenta">PRESS</span>
+            </span>
+            <span class="font-accent text-[10px] tracking-[0.26em] text-cyan-600 font-bold uppercase -mt-1 flex items-center gap-1">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+              COMMERCIAL PRINTING
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-1 xl:gap-2" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">Home</a>
+          <a href="about.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">About Us</a>
+          <a href="services.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">Services</a>
+          <a href="portfolio.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">Portfolio</a>
+          <a href="products.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">Products</a>
+          <a href="testimonials.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">Testimonials</a>
+          <a href="faq.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">FAQ</a>
+          <a href="contact.html" class="nav-link active px-3.5 py-2 rounded-xl text-sm font-semibold text-cyan-700 bg-cyan-50/80 border border-cyan-200/60 shadow-sm">Contact</a>
+        </nav>
+
+        <!-- Header CTA Actions -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="contact.html" class="relative group overflow-hidden rounded-xl p-px font-heading font-bold text-sm">
+            <span class="absolute inset-0 bg-gradient-to-r from-brand-cyan via-brand-magenta to-brand-yellow rounded-xl animate-gradient-x"></span>
+            <span class="relative block px-5 py-2.5 rounded-[11px] bg-slate-900 text-white group-hover:bg-opacity-0 transition-all duration-300 shadow-md">
+              ✨ Get Free Quote
+            </span>
+          </a>
+        </div>
+
+        <!-- Mobile Toggle Button -->
+        <div class="flex lg:hidden items-center">
+          <button id="mobileToggleBtn" class="mobile-toggle p-2.5 rounded-xl bg-slate-100 text-slate-800 hover:bg-slate-200 transition-all text-xl" aria-label="Toggle navigation menu" aria-expanded="false">
+            ☰
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="nav-menu lg:hidden max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out bg-white border-b border-slate-200 px-4 py-0">
+      <div class="flex flex-col gap-1 py-4">
+        <a href="index.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">Home</a>
+        <a href="about.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">About Us</a>
+        <a href="services.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">Services</a>
+        <a href="portfolio.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">Portfolio</a>
+        <a href="products.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">Products</a>
+        <a href="testimonials.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">Testimonials</a>
+        <a href="faq.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">FAQ</a>
+        <a href="contact.html" class="px-4 py-2.5 rounded-xl text-sm font-semibold text-cyan-700 bg-cyan-50">Contact</a>
+        <div class="pt-3 border-t border-slate-200 mt-2 flex flex-col gap-2">
+          <a href="contact.html" class="w-full text-center py-3 rounded-xl bg-gradient-to-r from-brand-cyan to-brand-magenta text-white font-bold text-sm shadow-md">
+            Get Instant Free Quote
+          </a>
+          <a href="tel:8005557746" class="w-full text-center py-2.5 rounded-xl bg-slate-100 text-slate-700 text-sm font-medium">
+            📞 Call (800) 555-PRINT
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Header -->
+  <section class="hero" style="padding-bottom: 3.5rem;">
+    <div class="container" style="text-align: center; max-width: 800px;">
+      <span class="badge">Get In Touch</span>
+      <h1>Contact Us & <span class="highlight">Get Free Quote</span></h1>
+      <p class="hero-description" style="margin-left: auto; margin-right: auto;">
+        Speak directly with our print specialists, send us a WhatsApp message, or submit your quote details below. Operating Mon-Sat 10:00 am to 8:00 pm.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Contact Grid -->
+  <section class="section">
+    <div class="container contact-grid">
+
+      <!-- HTML Contact Form Column (No Backend) -->
+      <div class="card" style="padding: 2.5rem;">
+        <h3 style="margin-bottom: 1.5rem;">Send Us a Message</h3>
+
+        <form class="validated-form" action="#" method="POST" style="display: flex; flex-direction: column; gap: 1.25rem;">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label class="form-label" for="contact-name">Full Name *</label>
+              <input type="text" id="contact-name" class="form-control" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-company">Company Name</label>
+              <input type="text" id="contact-company" class="form-control" placeholder="Acme Inc">
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label class="form-label" for="contact-email">Email Address *</label>
+              <input type="email" id="contact-email" class="form-control" placeholder="john@acme.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-phone">Phone Number *</label>
+              <input type="tel" id="contact-phone" class="form-control" placeholder="(555) 000-1234" required>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label class="form-label" for="contact-service">Select Printing Service *</label>
+              <select id="contact-service" class="form-select" required>
+                <option value="">-- Choose Service --</option>
+                <option value="offset">Commercial Offset Printing</option>
+                <option value="digital">Digital Printing</option>
+                <option value="flex">Flex & Vinyl Printing</option>
+                <option value="cards">Business & Visiting Cards</option>
+                <option value="flyers">Flyers & Brochures</option>
+                <option value="wedding">Wedding & Invitation Cards</option>
+                <option value="packaging">Packaging & Box Printing</option>
+                <option value="banners">Banner & Poster Printing</option>
+                <option value="custom">Custom Printing Project</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-turnaround">Preferred Delivery Speed</label>
+              <select id="contact-turnaround" class="form-select">
+                <option value="standard">Standard (3–5 Days)</option>
+                <option value="express">Express (2 Days)</option>
+                <option value="sameday">Same-Day Urgent</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contact-message">Project Message & Specifications</label>
+            <textarea id="contact-message" class="form-control" rows="4" placeholder="Describe paper GSM, dimensions, quantity, finishes (Gold Foil, Spot UV), or special instructions..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 0.5rem;">Send Quote Request &rarr;</button>
+        </form>
+      </div>
+
+      <!-- Contact Details & Google Map Placeholder Column -->
+      <div style="display: flex; flex-direction: column; gap: 2rem;">
+
+        <!-- Details Card -->
+        <div class="card">
+          <h3 style="margin-bottom: 1.25rem;">Contact Information</h3>
+
+          <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+            
+            <!-- Address -->
+            <div style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div style="font-size: 1.5rem; color: var(--primary);">📍</div>
+              <div>
+                <strong>Facility Address:</strong>
+                <p style="margin: 0; font-size: 0.95rem;">742 Industrial Press Way, Tech City, NY 10001</p>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div style="font-size: 1.5rem; color: var(--secondary);">📞</div>
+              <div>
+                <strong>Phone Hotline:</strong>
+                <p style="margin: 0; font-size: 0.95rem;">Toll-Free: (800) 555-PRINT <br> Direct Pressroom: (800) 555-7746</p>
+              </div>
+            </div>
+
+            <!-- WhatsApp Direct Button -->
+            <div style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div style="font-size: 1.5rem; color: #25D366;">💬</div>
+              <div>
+                <strong>WhatsApp Instant Support:</strong>
+                <p style="margin-bottom: 0.4rem; font-size: 0.95rem;">Chat directly with our pre-press team</p>
+                <a href="https://wa.me/18005557746" target="_blank" class="btn whatsapp-btn btn-sm">
+                  💬 Chat on WhatsApp (+1 800-555-7746)
+                </a>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div style="font-size: 1.5rem; color: var(--primary);">✉️</div>
+              <div>
+                <strong>Email Addresses:</strong>
+                <p style="margin: 0; font-size: 0.95rem;">Quotes: quotes@shreeprintingpress.com <br> Pre-Press: proofing@shreeprintingpress.com</p>
+              </div>
+            </div>
+
+            <!-- Business Hours -->
+            <div style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div style="font-size: 1.5rem; color: var(--secondary);">🕒</div>
+              <div>
+                <strong>Business Operating Hours:</strong>
+                <p style="margin: 0; font-size: 0.98rem; font-weight: 700; color: var(--primary);">Mon-Sat 10:00 am to 8:00 pm</p>
+                <p style="margin: 0; font-size: 0.88rem; color: var(--text-muted);">Sunday: Closed (24/7 Online Submissions)</p>
+              </div>
+            </div>
+
+            <!-- Social Media Icons -->
+            <div style="margin-top: 0.5rem; padding-top: 1rem; border-top: 1px solid var(--border);">
+              <strong>Follow Our Social Media:</strong>
+              <div style="display: flex; gap: 1rem; margin-top: 0.5rem; font-size: 1.4rem;">
+                <a href="#" aria-label="Facebook" style="color: var(--primary);">🌐 Facebook</a>
+                <a href="#" aria-label="Instagram" style="color: var(--secondary);">📸 Instagram</a>
+                <a href="#" aria-label="LinkedIn" style="color: var(--primary);">💼 LinkedIn</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Google Map Placeholder -->
+        <div class="card" style="padding: 0; overflow: hidden; height: 260px; position: relative;">
+          <img src="images/hero/hero-bg.png" alt="Google Map Location Placeholder" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.65);">
+          <div style="position: absolute; inset: 0; background: rgba(29, 78, 216, 0.75); display: flex; flex-direction: column; align-items: center; justify-content: center; color: #FFFFFF; text-align: center; padding: 1.5rem;">
+            <div style="font-size: 2.5rem; margin-bottom: 0.3rem;">🗺️</div>
+            <h4 style="color: #FFFFFF; margin-bottom: 0.2rem;">Shree Printing Press Facility</h4>
+            <p style="color: rgba(255,255,255,0.85); font-size: 0.9rem; margin-bottom: 0.8rem;">742 Industrial Press Way, Tech City, NY 10001</p>
+            <span class="badge badge-secondary">Pressroom & Pickup Counter • Mon-Sat 10:00 am to 8:00 pm</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color: #FFFFFF;">
+            <img src="images/logo.png" alt="Shree Printing Press Logo" class="logo-img">
+            <div>Shree <span>Printing Press</span></div>
+          </a>
+          <p>We deliver premium quality printing services including offset printing, digital printing, business stationery, wedding cards, banners, packaging, and custom printing with fast delivery and affordable prices.</p>
+          <div style="display: flex; gap: 1rem; font-size: 1.2rem;">
+            <a href="#" style="color: #FFFFFF;">🌐</a>
+            <a href="#" style="color: #FFFFFF;">💼</a>
+            <a href="#" style="color: #FFFFFF;">📸</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Offset Printing</a></li>
+            <li><a href="services.html">Digital Printing</a></li>
+            <li><a href="services.html">Business Cards</a></li>
+            <li><a href="services.html">Wedding Cards</a></li>
+            <li><a href="services.html">Banners & Flex</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contact Details</h4>
+          <p style="color: #94A3B8; font-size: 0.95rem; margin-bottom: 0.8rem;">📍 742 Industrial Press Way, Tech City, NY 10001</p>
+          <p style="color: #94A3B8; font-size: 0.95rem; margin-bottom: 0.8rem;">📞 (800) 555-PRINT</p>
+          <p style="color: #94A3B8; font-size: 0.95rem; margin-bottom: 0.8rem;">🕒 Mon-Sat 10:00 am to 8:00 pm</p>
+          <p style="color: #94A3B8; font-size: 0.95rem; margin-bottom: 0.8rem;">💬 WhatsApp: +1 (800) 555-7746</p>
+          <p style="color: #94A3B8; font-size: 0.95rem;">✉️ quotes@shreeprintingpress.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Shree Printing Press. All Rights Reserved. Pure Static Web.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+  <script>
+    const mobileBtn = document.getElementById('mobileToggleBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => {
+        const isOpen = mobileMenu.classList.contains('mobile-menu-open');
+        if (isOpen) {
+          mobileMenu.classList.remove('mobile-menu-open');
+          mobileBtn.innerHTML = '☰';
+          mobileBtn.setAttribute('aria-expanded', 'false');
+        } else {
+          mobileMenu.classList.add('mobile-menu-open');
+          mobileBtn.innerHTML = '✕';
+          mobileBtn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
+

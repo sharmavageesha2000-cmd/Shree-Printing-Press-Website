@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shree Printing Press | Premium Commercial Printing, Packaging & Design Solutions</title>
+  <meta name="description" content="Shree Printing Press delivers award-winning commercial offset printing, high-speed digital printing, luxury packaging boxes, visiting cards, flex banners, and bespoke finishes with express turnaround.">
+  <meta name="keywords" content="Shree Printing Press, commercial printing, offset printing, digital printing press, visiting cards, brochures, flyers, luxury packaging boxes, gold foil, flex banners">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Shree Printing Press | Premium Commercial Printing & Packaging">
+  <meta property="og:description" content="Vibrant CMYK precision printing, luxury foil stamping, custom packaging & same-day turnaround.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero/hero-vibrant.png">
+
+  <!-- Google Fonts: Outfit (Headings) + Plus Jakarta Sans (Body) + Space Grotesk (Accents) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS v3 Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            body: ['"Plus Jakarta Sans"', 'sans-serif'],
+            accent: ['"Space Grotesk"', 'sans-serif']
+          },
+          colors: {
+            brand: {
+              cyan: '#00B4D8',
+              magenta: '#E60067',
+              yellow: '#F59E0B',
+              dark: '#0F172A',
+              navy: '#1E293B',
+              royal: '#2563EB',
+              purple: '#7C3AED'
+            },
+            cmyk: {
+              c: '#00B4D8',
+              m: '#E60067',
+              y: '#F59E0B',
+              k: '#0F172A'
+            }
+          },
+          animation: {
+            'gradient-x': 'gradientX 6s ease infinite',
+            'float-slow': 'floatSlow 4.5s ease-in-out infinite',
+            'float-reverse': 'floatReverse 5s ease-in-out infinite',
+            'pulse-glow': 'pulseGlow 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+          },
+          keyframes: {
+            gradientX: {
+              '0%, 100%': { 'background-size': '200% 200%', 'background-position': 'left center' },
+              '50%': { 'background-size': '200% 200%', 'background-position': 'right center' }
+            },
+            floatSlow: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-10px)' }
+            },
+            floatReverse: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(10px)' }
+            },
+            pulseGlow: {
+              '0%, 100%': { opacity: '0.5', transform: 'scale(1)' },
+              '50%': { opacity: '0.8', transform: 'scale(1.05)' }
+            }
+          },
+          boxShadow: {
+            'soft-card': '0 10px 30px -5px rgba(0, 0, 0, 0.05), 0 4px 10px -2px rgba(0, 0, 0, 0.03)',
+            'hover-card': '0 20px 40px -10px rgba(0, 0, 0, 0.1), 0 8px 16px -4px rgba(0, 0, 0, 0.05)',
+            'cmyk-glow': '0 12px 35px -8px rgba(0, 180, 216, 0.25), 0 8px 25px -6px rgba(230, 0, 103, 0.2)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #F8FAFC;
+      color: #334155;
+      overflow-x: hidden;
+    }
+    .text-gradient-cmyk {
+      background: linear-gradient(135deg, #00B4D8 0%, #E60067 50%, #F59E0B 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .bg-cmyk-stripe {
+      background: linear-gradient(90deg, #00B4D8 0%, #00B4D8 25%, #E60067 25%, #E60067 50%, #F59E0B 50%, #F59E0B 75%, #0F172A 75%, #0F172A 100%);
+    }
+    .mobile-menu-open {
+      max-height: 520px !important;
+      opacity: 1 !important;
+      pointer-events: auto !important;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 min-h-screen text-slate-700 antialiased selection:bg-brand-magenta selection:text-white">
+
+  <!-- Top CMYK Dynamic Spectrum Bar -->
+  <div class="h-1.5 w-full bg-cmyk-stripe relative z-50"></div>
+
+  <!-- Announcement Bar (Light Theme) -->
+  <div class="bg-white border-b border-slate-200/80 py-2.5 px-4 text-xs font-accent text-slate-600">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-cyan-50 text-cyan-700 border border-cyan-200">
+          <span class="w-1.5 h-1.5 rounded-full bg-cyan-500 animate-ping"></span>
+          LIVE PRESS FACILITY
+        </span>
+        <span class="hidden sm:inline text-slate-500">Heidelberg Speedmaster & HP Indigo units online • 24H Rush Orders Accepted</span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-600 font-medium">
+        <span class="flex items-center gap-1">
+          <span class="text-amber-500">🕒</span> Mon-Sat 10:00 am - 8:00 pm
+        </span>
+        <a href="tel:8005557746" class="hover:text-brand-magenta transition-colors flex items-center gap-1 font-bold text-slate-900">
+          <span class="text-brand-magenta">📞</span> (800) 555-PRINT
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header (Light Theme) -->
+  <header class="header sticky top-0 z-40 backdrop-blur-xl bg-white/90 border-b border-slate-200/80 transition-all duration-300 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo & Brand Name -->
+        <a href="index.html" class="logo flex items-center gap-3.5 group" aria-label="Shree Printing Press Home">
+          <div class="relative">
+            <div class="absolute -inset-1 bg-gradient-to-r from-brand-cyan via-brand-magenta to-brand-yellow rounded-2xl blur-sm opacity-60 group-hover:opacity-100 transition duration-300"></div>
+            <img src="images/logo.png" alt="Shree Printing Press Logo" class="relative w-12 h-12 rounded-xl object-contain bg-white p-0.5 shadow-md border border-slate-200 transform group-hover:scale-105 transition duration-300">
+          </div>
+          <div class="flex flex-col">
+            <span class="font-heading font-black text-2xl tracking-tight text-slate-900 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-brand-cyan group-hover:via-brand-magenta group-hover:to-brand-yellow group-hover:bg-clip-text transition-all duration-300">
+              SHREE <span class="text-brand-magenta">PRESS</span>
+            </span>
+            <span class="font-accent text-[10px] tracking-[0.26em] text-cyan-600 font-bold uppercase -mt-1 flex items-center gap-1">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+              COMMERCIAL PRINTING
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-1 xl:gap-2" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link active px-3.5 py-2 rounded-xl text-sm font-semibold text-cyan-700 bg-cyan-50/80 border border-cyan-200/60 shadow-sm">Home</a>
+          <a href="about.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">About Us</a>
+          <a href="services.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">Services</a>
+          <a href="portfolio.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">Portfolio</a>
+          <a href="products.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">Products</a>
+          <a href="testimonials.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">Testimonials</a>
+          <a href="faq.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">FAQ</a>
+          <a href="contact.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">Contact</a>
+        </nav>
+
+        <!-- Header CTA Actions -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="contact.html" class="relative group overflow-hidden rounded-xl p-px font-heading font-bold text-sm">
+            <span class="absolute inset-0 bg-gradient-to-r from-brand-cyan via-brand-magenta to-brand-yellow rounded-xl animate-gradient-x"></span>
+            <span class="relative block px-5 py-2.5 rounded-[11px] bg-slate-900 text-white group-hover:bg-opacity-0 transition-all duration-300 shadow-md">
+              ✨ Get Free Quote
+            </span>
+          </a>
+        </div>
+
+        <!-- Mobile Toggle Button -->
+        <div class="flex lg:hidden items-center">
+          <button id="mobileToggleBtn" class="mobile-toggle p-2.5 rounded-xl bg-slate-100 text-slate-800 hover:bg-slate-200 transition-all text-xl" aria-label="Toggle navigation menu" aria-expanded="false">
+            ☰
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="nav-menu lg:hidden max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out bg-white border-b border-slate-200 px-4 py-0">
+      <div class="flex flex-col gap-1 py-4">
+        <a href="index.html" class="px-4 py-2.5 rounded-xl text-sm font-semibold text-cyan-700 bg-cyan-50">Home</a>
+        <a href="about.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">About Us</a>
+        <a href="services.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">Services</a>
+        <a href="portfolio.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">Portfolio</a>
+        <a href="products.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">Products</a>
+        <a href="testimonials.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">Testimonials</a>
+        <a href="faq.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">FAQ</a>
+        <a href="contact.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">Contact</a>
+        <div class="pt-3 border-t border-slate-200 mt-2 flex flex-col gap-2">
+          <a href="contact.html" class="w-full text-center py-3 rounded-xl bg-gradient-to-r from-brand-cyan to-brand-magenta text-white font-bold text-sm shadow-md">
+            Get Instant Free Quote
+          </a>
+          <a href="tel:8005557746" class="w-full text-center py-2.5 rounded-xl bg-slate-100 text-slate-700 text-sm font-medium">
+            📞 Call (800) 555-PRINT
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         1. HERO SECTION (WITH REQUESTED IMAGE AS BACKGROUND PERFECTLY FIT)
+         ===============================================================    <!-- =========================================================================
+         1. HERO SECTION (WITH REQUESTED IMAGE AS BACKGROUND PERFECTLY FIT)
+         ========================================================================= -->
+    <section class="relative min-h-[620px] lg:min-h-[700px] flex items-center overflow-hidden bg-slate-50 border-b border-slate-200" aria-label="Hero Section">
+      
+      <!-- HERO BACKGROUND IMAGE: Heidelberg Press & Vibrant Deliverables (Lighter with Soft Fade from Written Part) -->
+      <div class="absolute inset-0 z-0">
+        <img src="images/hero/hero-vibrant.png" alt="Heidelberg Speedmaster XL 106 Press Background" class="w-full h-full object-cover object-center brightness-105 contrast-95">
+        
+        <!-- Soft light fade from written part: smooth transition from left to right -->
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-50 via-slate-50/85 via-45% to-slate-50/20 sm:to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-50/50 via-transparent to-transparent"></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 relative z-10 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          
+          <!-- Left Column: High-Impact Typography & Action in Clean Light Mode -->
+          <div class="lg:col-span-8 flex flex-col items-start text-left">
+            
+            <!-- Quality Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 border border-cyan-300 shadow-sm backdrop-blur-md mb-6">
+              <span class="flex h-2 w-2 relative">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-500 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-600"></span>
+              </span>
+              <span class="text-xs font-accent font-bold tracking-wider uppercase text-cyan-800">
+                ✨ Industry-Leading Commercial Press Since 2011
+              </span>
+            </div>
+
+            <!-- Main Title with Bright CMYK Gradients -->
+            <h1 class="font-heading font-black text-4xl sm:text-5xl lg:text-6xl text-slate-950 tracking-tight leading-[1.12] mb-6">
+              Precision Color. <br>
+              <span class="text-gradient-cmyk drop-shadow-sm">Flawless Print.</span> <br>
+              <span class="text-slate-950">Bespoke Packaging.</span>
+            </h1>
+
+            <!-- Descriptive Text -->
+            <p class="text-base sm:text-lg text-slate-700 font-normal leading-relaxed max-w-xl mb-8">
+              Welcome to <strong class="text-slate-950 font-bold">Shree Printing Press</strong>. We combine German Heidelberg Speedmaster offset lines, 2400 DPI HP Indigo digital presses, and luxury finishes like gold metallic foil, spot UV gloss, and custom die-cut packaging.
+            </p>
+
+            <!-- Dual CTA Action Buttons -->
+            <div class="flex flex-wrap items-center gap-4 w-full sm:w-auto mb-10">
+              <a href="contact.html" class="w-full sm:w-auto inline-flex justify-center items-center gap-2.5 px-8 py-4 rounded-2xl bg-gradient-to-r from-brand-cyan via-brand-magenta to-brand-yellow text-white font-heading font-extrabold text-base shadow-cmyk-glow hover:scale-[1.03] transition-all duration-300">
+                <span>Start Free Quote</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+
+              <a href="services.html" class="w-full sm:w-auto inline-flex justify-center items-center gap-2 px-7 py-4 rounded-2xl bg-white hover:bg-slate-50 border border-slate-300 text-slate-800 font-heading font-semibold text-base shadow-sm transition-all duration-300 hover:border-cyan-500">
+                <span>Explore Services</span>
+                <span class="text-cyan-600">&rarr;</span>
+              </a>
+            </div>
+
+            <!-- Trust Highlights (Vibrant Light Glass Pills) -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 w-full border-t border-slate-300/80 pt-6">
+              <div class="flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-slate-800 bg-white/80 backdrop-blur-sm p-2.5 rounded-xl border border-slate-200/90 shadow-sm">
+                <span class="flex items-center justify-center w-8 h-8 rounded-lg bg-cyan-100 text-cyan-700 border border-cyan-200 text-base">⚡</span>
+                <span>Same-Day Dispatch</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-slate-800 bg-white/80 backdrop-blur-sm p-2.5 rounded-xl border border-slate-200/90 shadow-sm">
+                <span class="flex items-center justify-center w-8 h-8 rounded-lg bg-pink-100 text-brand-magenta border border-pink-200 text-base">🌿</span>
+                <span>Eco Soy Inks</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-slate-800 bg-white/80 backdrop-blur-sm p-2.5 rounded-xl border border-slate-200/90 shadow-sm col-span-2 sm:col-span-1">
+                <span class="flex items-center justify-center w-8 h-8 rounded-lg bg-amber-100 text-amber-700 border border-amber-200 text-base">🎨</span>
+                <span>Free Pre-Press Proof</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Kept clear so the Heidelberg Speedmaster background is fully visible -->
+          <div class="lg:col-span-4 hidden lg:block"></div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         2. INTERACTIVE LIVE PRINT ESTIMATOR & SPEC CALCULATOR WIDGET (LIGHT UI)
+         ========================================================================= -->
+    <section class="relative z-20 -mt-8 pb-16" aria-label="Quick Price Estimator">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="relative rounded-3xl p-px overflow-hidden shadow-xl bg-gradient-to-r from-brand-cyan via-brand-magenta to-brand-yellow">
+          
+          <div class="relative rounded-[23px] bg-white p-6 sm:p-8 lg:p-10">
+            <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 pb-6 border-b border-slate-200">
+              <div>
+                <span class="inline-block text-xs font-accent font-bold tracking-widest text-cyan-600 uppercase mb-1">
+                  ⚡ INSTANT PRICE ESTIMATOR
+                </span>
+                <h2 class="text-2xl sm:text-3xl font-heading font-bold text-slate-950">
+                  Calculate Your Custom Print Cost in Real-Time
+                </h2>
+                <p class="text-sm text-slate-500 mt-1">Select specifications below for an instant ballpark quote with wholesale tier savings.</p>
+              </div>
+
+              <div class="flex items-center gap-2 bg-emerald-50 border border-emerald-200 px-3.5 py-1.5 rounded-full text-emerald-700 text-xs font-semibold shadow-sm">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                Special 25% High-Volume Discount Applied
+              </div>
+            </div>
+
+            <!-- Interactive Inputs Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 pt-6">
+              
+              <!-- Product Selection -->
+              <div>
+                <label for="calcProduct" class="block text-xs font-accent font-semibold uppercase tracking-wider text-slate-700 mb-2">1. Product Type</label>
+                <select id="calcProduct" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-800 text-sm focus:outline-none focus:border-cyan-500 focus:bg-white transition-colors shadow-sm">
+                  <option value="visiting_cards">Visiting Cards (3.5" x 2")</option>
+                  <option value="brochures">Folded Brochures (A4 Tri-Fold)</option>
+                  <option value="flyers">Marketing Flyers (A5 Full Color)</option>
+                  <option value="boxes">Custom Rigid Packaging Box</option>
+                  <option value="banners">Vinyl Roll-Up Banner (33" x 81")</option>
+                </select>
+              </div>
+
+              <!-- Paper Stock -->
+              <div>
+                <label for="calcPaper" class="block text-xs font-accent font-semibold uppercase tracking-wider text-slate-700 mb-2">2. Paper & Finishing</label>
+                <select id="calcPaper" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-800 text-sm focus:outline-none focus:border-cyan-500 focus:bg-white transition-colors shadow-sm">
+                  <option value="300gsm">300 GSM Velvet Matte Card</option>
+                  <option value="350gsm">350 GSM Silk Soft-Touch</option>
+                  <option value="400gsm">400 GSM Metallic Gold Foil</option>
+                  <option value="spot_uv">Premium Spot UV Embossed</option>
+                </select>
+              </div>
+
+              <!-- Quantity -->
+              <div>
+                <label for="calcQty" class="block text-xs font-accent font-semibold uppercase tracking-wider text-slate-700 mb-2">3. Print Quantity</label>
+                <select id="calcQty" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-800 text-sm focus:outline-none focus:border-cyan-500 focus:bg-white transition-colors shadow-sm">
+                  <option value="500">500 Units (Starter)</option>
+                  <option value="1000" selected>1,000 Units (Popular)</option>
+                  <option value="2500">2,500 Units (Save 20%)</option>
+                  <option value="5000">5,000 Units (Save 35%)</option>
+                  <option value="10000">10,000+ Units (Wholesale)</option>
+                </select>
+              </div>
+
+              <!-- Live Estimate Display & Order Trigger -->
+              <div class="flex flex-col justify-end">
+                <div class="p-3 rounded-2xl bg-gradient-to-r from-cyan-50 via-pink-50 to-amber-50 border border-slate-200 flex items-center justify-between">
+                  <div>
+                    <span class="text-[10px] font-accent text-slate-500 uppercase tracking-widest block">Est. Investment</span>
+                    <span id="calcTotal" class="text-2xl font-heading font-black text-slate-900">$45.00</span>
+                  </div>
+                  <a href="contact.html" class="px-4 py-2 rounded-xl bg-gradient-to-r from-brand-cyan to-brand-magenta text-white font-heading font-bold text-xs shadow-md hover:opacity-90 transition-opacity">
+                    Confirm Quote &rarr;
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. COMPANY INTRODUCTION (LIGHT THEME)
+         ========================================================================= -->
+    <section class="py-16 lg:py-20 border-b border-slate-200 bg-white relative" aria-label="About Shree Printing Press">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left Text Content -->
+          <div class="lg:col-span-6 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-50 text-cyan-800 border border-cyan-200 text-xs font-accent font-bold uppercase tracking-wider">
+              🏭 Premier Manufacturing Press
+            </div>
+            
+            <h2 class="text-3xl sm:text-4xl font-heading font-black text-slate-950 tracking-tight leading-tight">
+              Crafting Superior Print Impressions For Every Enterprise Since 2011
+            </h2>
+
+            <p class="text-slate-600 leading-relaxed">
+              Shree Printing Press is an industrial-grade commercial printing facility operating German offset units, high-definition digital presses, and precision die-cutting equipment. From boutique retail brands needing gold-foiled business stationery to global enterprises printing millions of catalogs, we deliver uncompromising Pantone fidelity.
+            </p>
+
+            <div class="grid grid-cols-2 gap-4 pt-2">
+              <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 hover:border-cyan-400 hover:bg-white transition-all shadow-sm">
+                <div class="text-2xl mb-1">🎯</div>
+                <h4 class="font-heading font-bold text-slate-900 text-base">Pantone Accurate</h4>
+                <p class="text-xs text-slate-500 mt-1">Spectrophotometer color calibration on every run.</p>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-magenta hover:bg-white transition-all shadow-sm">
+                <div class="text-2xl mb-1">⚡</div>
+                <h4 class="font-heading font-bold text-slate-900 text-base">Rapid Dispatch</h4>
+                <p class="text-xs text-slate-500 mt-1">Same-day rush options for urgent client events.</p>
+              </div>
+            </div>
+
+            <div class="pt-4">
+              <a href="about.html" class="inline-flex items-center gap-2 text-cyan-600 hover:text-cyan-800 font-heading font-bold text-sm tracking-wide group transition-colors">
+                <span>Read Full Company Story & Machine Overview</span>
+                <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Showcase Image -->
+          <div class="lg:col-span-6 relative">
+            <div class="relative rounded-3xl overflow-hidden p-1.5 bg-gradient-to-tr from-cyan-400/30 via-slate-200 to-pink-400/30 shadow-xl">
+              <img src="images/services/offset-printing.png" alt="Commercial Offset Press Machine Operation" class="w-full h-80 sm:h-96 object-cover rounded-[22px]">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
+              <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200 shadow-lg">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h5 class="font-heading font-bold text-slate-900 text-sm">Industrial Offset Division</h5>
+                    <p class="text-xs text-slate-500">Capacity: 15,000 sheets per hour with inline coating</p>
+                  </div>
+                  <span class="text-xs font-bold text-brand-magenta bg-pink-50 px-2.5 py-1 rounded-full border border-pink-200">
+                    High Volume
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. FEATURED COMMERCIAL SERVICES (NOW WITH 6 FULL SERVICES!)
+         ========================================================================= -->
+    <section class="py-20 bg-slate-50 relative" aria-label="Featured Commercial Services">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+          <div>
+            <span class="inline-block text-xs font-accent font-bold tracking-widest text-cyan-700 uppercase mb-2">
+              🖨️ FULL COMMERCIAL PORTFOLIO
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-heading font-black text-slate-950">
+              Featured Commercial Services
+            </h2>
+            <p class="text-slate-500 text-sm sm:text-base mt-2">Comprehensive printing, packaging, and marketing manufacturing solutions under one roof.</p>
+          </div>
+          <a href="services.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-800 font-heading font-bold text-sm shadow-sm transition-all hover:border-cyan-500">
+            <span>View All Services</span>
+            <span class="text-cyan-600">&rarr;</span>
+          </a>
+        </div>
+
+        <!-- 6 Featured Commercial Services Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Service 1: Offset Printing -->
+          <div class="rounded-3xl bg-white border border-slate-200/90 overflow-hidden group hover:border-cyan-500 hover:shadow-hover-card transition-all duration-300 flex flex-col shadow-soft-card">
+            <div class="relative h-56 overflow-hidden">
+              <img src="images/services/offset-printing.png" alt="Commercial Offset Printing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 right-4 bg-cyan-600 text-white text-xs font-accent font-bold px-3 py-1 rounded-full shadow-md">
+                HIGH VOLUME
+              </div>
+            </div>
+            <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl font-heading font-bold text-slate-950 mb-2 group-hover:text-cyan-600 transition-colors">
+                  Commercial Offset Printing
+                </h3>
+                <p class="text-sm text-slate-600 leading-relaxed mb-5">
+                  Engineered for large-scale print runs such as corporate catalogs, annual reports, multi-page magazines, and folded brochures with exact Pantone fidelity.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-xs font-accent text-slate-500 font-medium">1,000 to 500,000+ units</span>
+                <a href="services.html" class="text-cyan-600 font-heading font-bold text-sm hover:underline">Learn More &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 2: Digital Color Press -->
+          <div class="rounded-3xl bg-white border border-slate-200/90 overflow-hidden group hover:border-brand-magenta hover:shadow-hover-card transition-all duration-300 flex flex-col shadow-soft-card">
+            <div class="relative h-56 overflow-hidden">
+              <img src="images/services/digital-printing.png" alt="Digital Press Short Run" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 right-4 bg-brand-magenta text-white text-xs font-accent font-bold px-3 py-1 rounded-full shadow-md">
+                RAPID ON-DEMAND
+              </div>
+            </div>
+            <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl font-heading font-bold text-slate-950 mb-2 group-hover:text-brand-magenta transition-colors">
+                  Digital Printing Press
+                </h3>
+                <p class="text-sm text-slate-600 leading-relaxed mb-5">
+                  Lightning fast on-demand printing for visiting cards, marketing flyers, event stationery, and variable data addressing with zero plate setup cost.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-xs font-accent text-slate-500 font-medium">Same-Day Turnaround</span>
+                <a href="services.html" class="text-brand-magenta font-heading font-bold text-sm hover:underline">Learn More &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3: Packaging & Custom Boxes -->
+          <div class="rounded-3xl bg-white border border-slate-200/90 overflow-hidden group hover:border-amber-500 hover:shadow-hover-card transition-all duration-300 flex flex-col shadow-soft-card">
+            <div class="relative h-56 overflow-hidden">
+              <img src="images/products/custom-boxes.png" alt="Luxury Packaging Boxes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 right-4 bg-amber-500 text-slate-950 text-xs font-accent font-bold px-3 py-1 rounded-full shadow-md">
+                BESPOKE PACKAGING
+              </div>
+            </div>
+            <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl font-heading font-bold text-slate-950 mb-2 group-hover:text-amber-600 transition-colors">
+                  Packaging & Custom Boxes
+                </h3>
+                <p class="text-sm text-slate-600 leading-relaxed mb-5">
+                  Custom die-cut rigid gift boxes, e-commerce mailers, cosmetic sleeves, and gold foil embossed packaging designed to elevate brand unboxing.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-xs font-accent text-slate-500 font-medium">Die-Cut & Spot UV</span>
+                <a href="services.html" class="text-amber-600 font-heading font-bold text-sm hover:underline">Learn More &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 4: Large Format & Flex Banners (NEW ADDITION 1) -->
+          <div class="rounded-3xl bg-white border border-slate-200/90 overflow-hidden group hover:border-cyan-500 hover:shadow-hover-card transition-all duration-300 flex flex-col shadow-soft-card">
+            <div class="relative h-56 overflow-hidden">
+              <img src="images/services/large-format.png" alt="Large Format Banners and Flex Signage" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 right-4 bg-blue-600 text-white text-xs font-accent font-bold px-3 py-1 rounded-full shadow-md">
+                LARGE FORMAT
+              </div>
+            </div>
+            <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl font-heading font-bold text-slate-950 mb-2 group-hover:text-blue-600 transition-colors">
+                  Large Format & Flex Banners
+                </h3>
+                <p class="text-sm text-slate-600 leading-relaxed mb-5">
+                  Heavy-duty outdoor flex banners, trade show roll-up standees, exhibition backdrops, and vinyl wall graphics with UV-resistant vibrant inks.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-xs font-accent text-slate-500 font-medium">Weather-Proof 1440 DPI</span>
+                <a href="services.html" class="text-blue-600 font-heading font-bold text-sm hover:underline">Learn More &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 5: Luxury Visiting & Business Cards (NEW ADDITION 2) -->
+          <div class="rounded-3xl bg-white border border-slate-200/90 overflow-hidden group hover:border-brand-magenta hover:shadow-hover-card transition-all duration-300 flex flex-col shadow-soft-card">
+            <div class="relative h-56 overflow-hidden">
+              <img src="images/products/business-cards.png" alt="Luxury Business Cards with Gold Foil" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 right-4 bg-purple-600 text-white text-xs font-accent font-bold px-3 py-1 rounded-full shadow-md">
+                PREMIUM STATIONERY
+              </div>
+            </div>
+            <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl font-heading font-bold text-slate-950 mb-2 group-hover:text-purple-600 transition-colors">
+                  Luxury Visiting & Business Cards
+                </h3>
+                <p class="text-sm text-slate-600 leading-relaxed mb-5">
+                  Distinguish your executive brand with 450 GSM velvet touch cardstocks, metallic gold/copper foil hot stamping, embossed logos, and gilded edges.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-xs font-accent text-slate-500 font-medium">Foil Stamping & Embossing</span>
+                <a href="services.html" class="text-purple-600 font-heading font-bold text-sm hover:underline">Learn More &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 6: Brochures, Booklets & Catalogs (NEW ADDITION 3) -->
+          <div class="rounded-3xl bg-white border border-slate-200/90 overflow-hidden group hover:border-emerald-500 hover:shadow-hover-card transition-all duration-300 flex flex-col shadow-soft-card">
+            <div class="relative h-56 overflow-hidden">
+              <img src="images/products/brochures.png" alt="Brochures, Booklets, and Catalogs Printing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 right-4 bg-emerald-600 text-white text-xs font-accent font-bold px-3 py-1 rounded-full shadow-md">
+                BOOKLETS & CATALOGS
+              </div>
+            </div>
+            <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl font-heading font-bold text-slate-950 mb-2 group-hover:text-emerald-600 transition-colors">
+                  Brochures, Booklets & Catalogs
+                </h3>
+                <p class="text-sm text-slate-600 leading-relaxed mb-5">
+                  High-capacity bi-fold and tri-fold marketing pamphlets, saddle-stitched company profiles, and perfect-bound product catalogs on premium gloss or silk text.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-xs font-accent text-slate-500 font-medium">Saddle Stitch & Perfect Bound</span>
+                <a href="services.html" class="text-emerald-600 font-heading font-bold text-sm hover:underline">Learn More &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. WHY CHOOSE SHREE PRINTING PRESS (LIGHT GLOW CARDS)
+         ========================================================================= -->
+    <section class="py-20 bg-white border-t border-b border-slate-200 relative" aria-label="Why Choose Us">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="inline-block text-xs font-accent font-bold tracking-widest text-brand-magenta uppercase mb-2">
+            💎 UNCOMPROMISED ADVANTAGES
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-heading font-black text-slate-950">
+            Why Forward-Thinking Brands Choose Shree
+          </h2>
+          <p class="text-slate-600 mt-3 text-sm sm:text-base">
+            We merge German engineering precision with artisan hand finishing to ensure each printed piece commands attention.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Card 1 (Cyan Theme) -->
+          <div class="group p-8 rounded-3xl bg-slate-50 border border-slate-200 hover:border-cyan-400 hover:bg-white hover:shadow-hover-card transition-all duration-300 relative">
+            <div class="w-14 h-14 rounded-2xl bg-cyan-100 text-cyan-700 flex items-center justify-center text-2xl shadow-sm mb-6 group-hover:scale-110 transition-transform">
+              💎
+            </div>
+            <h3 class="text-xl font-heading font-bold text-slate-900 mb-2.5 group-hover:text-cyan-600 transition-colors">
+              True 2400 DPI Precision
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              State-of-the-art laser plate setting with high-density soy inks ensures razor-sharp microtext, smooth gradients, and rich tonal depth.
+            </p>
+          </div>
+
+          <!-- Card 2 (Magenta Theme) -->
+          <div class="group p-8 rounded-3xl bg-slate-50 border border-slate-200 hover:border-pink-400 hover:bg-white hover:shadow-hover-card transition-all duration-300 relative">
+            <div class="w-14 h-14 rounded-2xl bg-pink-100 text-brand-magenta flex items-center justify-center text-2xl shadow-sm mb-6 group-hover:scale-110 transition-transform">
+              🚀
+            </div>
+            <h3 class="text-xl font-heading font-bold text-slate-900 mb-2.5 group-hover:text-brand-magenta transition-colors">
+              Express Same-Day Turnaround
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Urgent trade show or press conference? Our round-the-clock shift schedules ensure rapid 24-hour turnaround on priority collateral.
+            </p>
+          </div>
+
+          <!-- Card 3 (Yellow Theme) -->
+          <div class="group p-8 rounded-3xl bg-slate-50 border border-slate-200 hover:border-amber-400 hover:bg-white hover:shadow-hover-card transition-all duration-300 relative">
+            <div class="w-14 h-14 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center text-2xl shadow-sm mb-6 group-hover:scale-110 transition-transform">
+              💰
+            </div>
+            <h3 class="text-xl font-heading font-bold text-slate-900 mb-2.5 group-hover:text-amber-600 transition-colors">
+              Direct Manufacturer Pricing
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              No middleman brokers or agency markups. Enjoy direct factory wholesale prices with steep bulk tier savings for your business.
+            </p>
+          </div>
+
+          <!-- Card 4 (Purple Theme) -->
+          <div class="group p-8 rounded-3xl bg-slate-50 border border-slate-200 hover:border-purple-400 hover:bg-white hover:shadow-hover-card transition-all duration-300 relative">
+            <div class="w-14 h-14 rounded-2xl bg-purple-100 text-purple-700 flex items-center justify-center text-2xl shadow-sm mb-6 group-hover:scale-110 transition-transform">
+              🎨
+            </div>
+            <h3 class="text-xl font-heading font-bold text-slate-900 mb-2.5 group-hover:text-purple-600 transition-colors">
+              Complimentary Pre-Press Proof
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Our pre-press engineers thoroughly review your bleed zones, trim lines, and resolution, sending a free PDF proof before printing begins.
+            </p>
+          </div>
+
+          <!-- Card 5 (Emerald Theme) -->
+          <div class="group p-8 rounded-3xl bg-slate-50 border border-slate-200 hover:border-emerald-400 hover:bg-white hover:shadow-hover-card transition-all duration-300 relative">
+            <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-2xl shadow-sm mb-6 group-hover:scale-110 transition-transform">
+              🌿
+            </div>
+            <h3 class="text-xl font-heading font-bold text-slate-900 mb-2.5 group-hover:text-emerald-600 transition-colors">
+              100% Eco-Conscious Printing
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              FSC-certified sustainable virgin and recycled paper stocks combined with zero-VOC soy inks and energy-efficient LED UV curing.
+            </p>
+          </div>
+
+          <!-- Card 6 (Rose Theme) -->
+          <div class="group p-8 rounded-3xl bg-slate-50 border border-slate-200 hover:border-rose-400 hover:bg-white hover:shadow-hover-card transition-all duration-300 relative">
+            <div class="w-14 h-14 rounded-2xl bg-rose-100 text-rose-700 flex items-center justify-center text-2xl shadow-sm mb-6 group-hover:scale-110 transition-transform">
+              🤝
+            </div>
+            <h3 class="text-xl font-heading font-bold text-slate-900 mb-2.5 group-hover:text-rose-600 transition-colors">
+              Dedicated Account Specialists
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Direct access to seasoned print engineers via WhatsApp, phone, or in-person facility walkthrough for custom specifications.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. FOUR-STEP CMYK WORKFLOW PIPELINE
+         ========================================================================= -->
+    <section class="py-20 bg-slate-100/70 border-b border-slate-200 relative" aria-label="Our Printing Process">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="inline-block text-xs font-accent font-bold tracking-widest text-amber-600 uppercase mb-2">
+            ⚙️ PRECISION WORKFLOW
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-heading font-black text-slate-950">
+            Our 4-Step Commercial Process
+          </h2>
+          <p class="text-slate-500 mt-2 text-sm">From initial digital artwork upload to doorstep freight delivery.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Step 1: Cyan -->
+          <div class="p-6 rounded-3xl bg-white border border-cyan-200 shadow-sm relative">
+            <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-700 font-heading font-black text-xl flex items-center justify-center mb-4">
+              01
+            </div>
+            <h4 class="font-heading font-bold text-slate-900 text-lg mb-2">Consult & Quote</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Select paper weight GSM, coatings, and dimensions. Receive an itemized quote within 30 minutes.
+            </p>
+          </div>
+
+          <!-- Step 2: Magenta -->
+          <div class="p-6 rounded-3xl bg-white border border-pink-200 shadow-sm relative">
+            <div class="w-12 h-12 rounded-xl bg-pink-100 text-brand-magenta font-heading font-black text-xl flex items-center justify-center mb-4">
+              02
+            </div>
+            <h4 class="font-heading font-bold text-slate-900 text-lg mb-2">Pre-Press Proof</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Artwork check for CMYK conversion, bleeds, safe margins, and resolution. Electronic sign-off PDF provided.
+            </p>
+          </div>
+
+          <!-- Step 3: Yellow -->
+          <div class="p-6 rounded-3xl bg-white border border-amber-200 shadow-sm relative">
+            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 font-heading font-black text-xl flex items-center justify-center mb-4">
+              03
+            </div>
+            <h4 class="font-heading font-bold text-slate-900 text-lg mb-2">Precision Press Run</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              High-speed Heidelberg offset or HP Indigo digital press run with continuous inline color calibration.
+            </p>
+          </div>
+
+          <!-- Step 4: Indigo/Key -->
+          <div class="p-6 rounded-3xl bg-white border border-slate-300 shadow-sm relative">
+            <div class="w-12 h-12 rounded-xl bg-slate-100 text-slate-800 font-heading font-black text-xl flex items-center justify-center mb-4">
+              04
+            </div>
+            <h4 class="font-heading font-bold text-slate-900 text-lg mb-2">Finishing & Dispatch</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Die-cutting, foil embossing, lamination, and moisture-barrier protective packaging with express delivery.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. COMPANY STATISTICS (LIGHT NUMBERS STRIP)
+         ========================================================================= -->
+    <section class="py-16 relative overflow-hidden bg-white border-b border-slate-200" aria-label="Company Statistics">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+          
+          <div class="p-4">
+            <div class="stat-number text-4xl sm:text-5xl font-heading font-black text-cyan-600 tracking-tight mb-1">
+              25M+
+            </div>
+            <div class="text-xs sm:text-sm font-accent text-slate-500 uppercase tracking-wider font-semibold">
+              Pages Printed Annually
+            </div>
+          </div>
+
+          <div class="p-4">
+            <div class="stat-number text-4xl sm:text-5xl font-heading font-black text-brand-magenta tracking-tight mb-1">
+              15+
+            </div>
+            <div class="text-xs sm:text-sm font-accent text-slate-500 uppercase tracking-wider font-semibold">
+              Years Operating Experience
+            </div>
+          </div>
+
+          <div class="p-4">
+            <div class="stat-number text-4xl sm:text-5xl font-heading font-black text-amber-500 tracking-tight mb-1">
+              99.8%
+            </div>
+            <div class="text-xs sm:text-sm font-accent text-slate-500 uppercase tracking-wider font-semibold">
+              On-Time Delivery Rate
+            </div>
+          </div>
+
+          <div class="p-4">
+            <div class="stat-number text-4xl sm:text-5xl font-heading font-black text-slate-900 tracking-tight mb-1">
+              10,000+
+            </div>
+            <div class="text-xs sm:text-sm font-accent text-slate-500 uppercase tracking-wider font-semibold">
+              Satisfied Global Clients
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         8. TESTIMONIALS SLIDER SECTION (LIGHT MODE)
+         ========================================================================= -->
+    <section class="py-20 relative bg-slate-50" aria-label="Client Testimonials">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-12">
+          <span class="inline-block text-xs font-accent font-bold tracking-widest text-cyan-600 uppercase mb-2">
+            ⭐ CLIENT VOICES
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-heading font-black text-slate-950">
+            What Our Customers Say
+          </h2>
+        </div>
+
+        <div class="testimonial-slider-container relative rounded-3xl bg-white border border-slate-200/90 p-8 sm:p-12 shadow-soft-card overflow-hidden">
+          
+          <!-- Slide 1 -->
+          <div class="testimonial-slide active transition-opacity duration-500">
+            <div class="text-amber-500 text-xl tracking-widest mb-4">★★★★★</div>
+            <p class="slider-quote text-lg sm:text-xl text-slate-700 font-heading leading-relaxed mb-6 italic">
+              "Shree Printing Press manufactured 25,000 custom gold foil rigid boxes for our cosmetic brand. The die-cutting accuracy and soft-touch velvet lamination were simply world-class. Delivered 2 days ahead of schedule!"
+            </p>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-brand-cyan to-brand-magenta flex items-center justify-center font-bold text-white shadow-md">
+                SK
+              </div>
+              <div>
+                <h4 class="font-heading font-bold text-slate-900 text-base">Sophia Kraft</h4>
+                <p class="text-xs text-cyan-600 font-accent font-semibold">Creative Director, Lumina Cosmetics</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="testimonial-slide hidden transition-opacity duration-500">
+            <div class="text-amber-500 text-xl tracking-widest mb-4">★★★★★</div>
+            <p class="slider-quote text-lg sm:text-xl text-slate-700 font-heading leading-relaxed mb-6 italic">
+              "We frequently need 50+ retractable trade show vinyl banners overnight for global conventions. Shree Printing Press is our trusted partner for saturated color brilliance, durability, and absolute reliability."
+            </p>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-brand-magenta to-brand-yellow flex items-center justify-center font-bold text-white shadow-md">
+                MV
+              </div>
+              <div>
+                <h4 class="font-heading font-bold text-slate-900 text-base">Marcus Vance</h4>
+                <p class="text-xs text-brand-magenta font-accent font-semibold">Head of Operations, Horizon Events</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="testimonial-slide hidden transition-opacity duration-500">
+            <div class="text-amber-500 text-xl tracking-widest mb-4">★★★★★</div>
+            <p class="slider-quote text-lg sm:text-xl text-slate-700 font-heading leading-relaxed mb-6 italic">
+              "The 450 GSM copper gilded edge visiting cards we ordered received instant praise from high-net-worth investors. Outstanding pre-press guidance and flawless finishing!"
+            </p>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-brand-yellow to-blue-500 flex items-center justify-center font-bold text-white shadow-md">
+                EL
+              </div>
+              <div>
+                <h4 class="font-heading font-bold text-slate-900 text-base">Elena Lin</h4>
+                <p class="text-xs text-amber-600 font-accent font-semibold">Founder, Apex Wealth Advisory</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider Controls -->
+          <div class="flex items-center justify-between mt-8 pt-6 border-t border-slate-200">
+            <div class="slider-dots flex gap-2">
+              <span class="w-3 h-3 rounded-full bg-cyan-600"></span>
+              <span class="w-3 h-3 rounded-full bg-slate-300"></span>
+              <span class="w-3 h-3 rounded-full bg-slate-300"></span>
+            </div>
+            <div class="flex gap-2">
+              <button class="slider-btn slider-prev p-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all text-sm" aria-label="Previous review">❮</button>
+              <button class="slider-btn slider-next p-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all text-sm" aria-label="Next review">❯</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         9. CALL TO ACTION BANNER (LIGHT RADIANT)
+         ========================================================================= -->
+    <section class="py-20 relative overflow-hidden bg-white border-t border-slate-200" aria-label="Call to Action Banner">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="relative rounded-3xl p-1 overflow-hidden shadow-xl bg-gradient-to-r from-brand-cyan via-brand-magenta to-brand-yellow animate-gradient-x">
+          
+          <div class="relative rounded-[23px] bg-slate-900 p-8 sm:p-12 lg:p-16 text-center text-white">
+            
+            <span class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 text-white border border-white/20 text-xs font-accent font-bold uppercase tracking-wider mb-6">
+              🚀 Ready To Print?
+            </span>
+
+            <h2 class="text-3xl sm:text-5xl font-heading font-black text-white tracking-tight max-w-3xl mx-auto mb-6">
+              Elevate Your Brand's Printed Presence With Master Precision
+            </h2>
+
+            <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+              Upload your artwork or speak directly with our pre-press engineers. We provide complimentary digital proofing and rapid turnaround across all commercial formats.
+            </p>
+
+            <div class="flex flex-wrap items-center justify-center gap-4">
+              <a href="contact.html" class="px-8 py-4 rounded-2xl bg-gradient-to-r from-brand-cyan to-brand-magenta text-white font-heading font-extrabold text-base shadow-lg hover:scale-105 transition-all duration-300">
+                Get Your Free Quote Now &rarr;
+              </a>
+              <a href="tel:8005557746" class="px-8 py-4 rounded-2xl bg-white/15 hover:bg-white/25 border border-white/30 text-white font-heading font-semibold text-base transition-all">
+                📞 Speak with Master Printer
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       10. FOOTER WITH BRANDED PNG LOGO (LIGHT THEME)
+       ========================================================================= -->
+  <footer class="bg-white border-t border-slate-200 pt-16 pb-12 text-slate-600 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 mb-12">
+        
+        <!-- Brand Info & Logo -->
+        <div class="lg:col-span-4 space-y-4">
+          <a href="index.html" class="flex items-center gap-3.5 group" aria-label="Shree Printing Press Footer Logo">
+            <div class="relative">
+              <div class="absolute -inset-1 bg-gradient-to-r from-brand-cyan via-brand-magenta to-brand-yellow rounded-2xl blur-sm opacity-60"></div>
+              <img src="images/logo.png" alt="Shree Printing Press Logo" class="relative w-12 h-12 rounded-xl object-contain bg-white p-0.5 shadow-sm border border-slate-200">
+            </div>
+            <div class="flex flex-col">
+              <span class="font-heading font-black text-2xl tracking-tight text-slate-900">
+                SHREE <span class="text-brand-magenta">PRESS</span>
+              </span>
+              <span class="font-accent text-[10px] tracking-[0.24em] text-cyan-600 font-bold uppercase -mt-1">
+                COMMERCIAL PRINTING
+              </span>
+            </div>
+          </a>
+
+          <p class="text-slate-500 text-xs sm:text-sm leading-relaxed max-w-sm">
+            High-definition commercial offset, digital print solutions, and custom rigid packaging manufacturing. Operating since 2011 with ISO 9001 certified color fidelity.
+          </p>
+
+          <div class="flex gap-3 text-lg pt-2">
+            <a href="#" class="w-9 h-9 rounded-xl bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-700 transition-colors" aria-label="Website">🌐</a>
+            <a href="#" class="w-9 h-9 rounded-xl bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-700 transition-colors" aria-label="LinkedIn">💼</a>
+            <a href="#" class="w-9 h-9 rounded-xl bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-700 transition-colors" aria-label="Instagram">📸</a>
+            <a href="#" class="w-9 h-9 rounded-xl bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-700 transition-colors" aria-label="Twitter">🐦</a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="font-heading font-bold text-slate-900 text-base">Quick Links</h4>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="index.html" class="hover:text-cyan-600 transition-colors">Home</a></li>
+            <li><a href="about.html" class="hover:text-cyan-600 transition-colors">About Us</a></li>
+            <li><a href="services.html" class="hover:text-cyan-600 transition-colors">Services</a></li>
+            <li><a href="portfolio.html" class="hover:text-cyan-600 transition-colors">Portfolio</a></li>
+            <li><a href="products.html" class="hover:text-cyan-600 transition-colors">Products</a></li>
+            <li><a href="testimonials.html" class="hover:text-cyan-600 transition-colors">Testimonials</a></li>
+            <li><a href="faq.html" class="hover:text-cyan-600 transition-colors">FAQ Desk</a></li>
+            <li><a href="contact.html" class="hover:text-cyan-600 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Printing Divisions -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="font-heading font-bold text-slate-900 text-base">Capabilities</h4>
+          <ul class="space-y-2 text-xs sm:text-sm">
+            <li><a href="services.html" class="hover:text-brand-magenta transition-colors">Commercial Offset Press</a></li>
+            <li><a href="services.html" class="hover:text-brand-magenta transition-colors">High-Speed Digital Printing</a></li>
+            <li><a href="services.html" class="hover:text-brand-magenta transition-colors">Visiting & Corporate Cards</a></li>
+            <li><a href="services.html" class="hover:text-brand-magenta transition-colors">Luxury Packaging & Boxes</a></li>
+            <li><a href="services.html" class="hover:text-brand-magenta transition-colors">Trade Show Vinyl Banners</a></li>
+            <li><a href="services.html" class="hover:text-brand-magenta transition-colors">Gold Foil & Spot UV Finishes</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Desk -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="font-heading font-bold text-slate-900 text-base">Plant & Office</h4>
+          <div class="space-y-2 text-xs sm:text-sm">
+            <p class="flex items-start gap-2">
+              <span class="text-cyan-600">📍</span>
+              <span>742 Industrial Press Way, Tech City, NY 10001</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <span class="text-brand-magenta">📞</span>
+              <a href="tel:8005557746" class="hover:text-slate-900 font-medium">(800) 555-PRINT</a>
+            </p>
+            <p class="flex items-center gap-2">
+              <span class="text-amber-500">🕒</span>
+              <span>Mon-Sat 10:00 am - 8:00 pm</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <span class="text-emerald-600">💬</span>
+              <span>WhatsApp: +1 (800) 555-7746</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <span class="text-cyan-600">✉️</span>
+              <a href="mailto:quotes@shreeprintingpress.com" class="hover:text-slate-900">quotes@shreeprintingpress.com</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div>&copy; 2026 Shree Printing Press. All Rights Reserved. Engineered with Tailwind CSS.</div>
+        <div class="flex gap-6">
+          <a href="faq.html" class="hover:text-slate-800 transition-colors">Pre-Press Guide</a>
+          <a href="faq.html" class="hover:text-slate-800 transition-colors">Privacy Policy</a>
+          <a href="faq.html" class="hover:text-slate-800 transition-colors">Terms of Service</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript for Price Estimator & Mobile Navigation -->
+  <script>
+    // Mobile Menu Toggle
+    const mobileBtn = document.getElementById('mobileToggleBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => {
+        const isOpen = mobileMenu.classList.contains('mobile-menu-open');
+        if (isOpen) {
+          mobileMenu.classList.remove('mobile-menu-open');
+          mobileBtn.innerHTML = '☰';
+          mobileBtn.setAttribute('aria-expanded', 'false');
+        } else {
+          mobileMenu.classList.add('mobile-menu-open');
+          mobileBtn.innerHTML = '✕';
+          mobileBtn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    }
+
+    // Dynamic Live Estimator Logic
+    const prodSelect = document.getElementById('calcProduct');
+    const paperSelect = document.getElementById('calcPaper');
+    const qtySelect = document.getElementById('calcQty');
+    const totalDisplay = document.getElementById('calcTotal');
+
+    const BASE_PRICES = {
+      visiting_cards: 0.045,
+      brochures: 0.22,
+      flyers: 0.08,
+      boxes: 1.15,
+      banners: 12.50
+    };
+
+    const PAPER_MULTIPLIERS = {
+      '300gsm': 1.0,
+      '350gsm': 1.25,
+      '400gsm': 1.6,
+      'spot_uv': 1.85
+    };
+
+    function updatePrice() {
+      if (!prodSelect || !paperSelect || !qtySelect || !totalDisplay) return;
+      const prod = prodSelect.value;
+      const paper = paperSelect.value;
+      const qty = parseInt(qtySelect.value, 10);
+
+      const base = BASE_PRICES[prod] || 0.05;
+      const mult = PAPER_MULTIPLIERS[paper] || 1.0;
+
+      // Tier discount
+      let discount = 1.0;
+      if (qty >= 10000) discount = 0.65;
+      else if (qty >= 5000) discount = 0.75;
+      else if (qty >= 2500) discount = 0.82;
+      else if (qty >= 1000) discount = 0.90;
+
+      let total = (base * mult * qty * discount);
+      if (prod === 'banners') {
+        total = base * mult * (qty / 100) * 8;
+      }
+      totalDisplay.textContent = '$' + total.toFixed(2);
+    }
+
+    if (prodSelect && paperSelect && qtySelect) {
+      prodSelect.addEventListener('change', updatePrice);
+      paperSelect.addEventListener('change', updatePrice);
+      qtySelect.addEventListener('change', updatePrice);
+      updatePrice();
+    }
+
+    // Testimonial Slider Rotation
+    const slides = document.querySelectorAll('.testimonial-slide');
+    const dots = document.querySelectorAll('.slider-dots span');
+    const prevBtn = document.querySelector('.slider-prev');
+    const nextBtn = document.querySelector('.slider-next');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach((s, i) => {
+        if (i === index) {
+          s.classList.remove('hidden');
+          s.classList.add('block');
+        } else {
+          s.classList.add('hidden');
+          s.classList.remove('block');
+        }
+      });
+      dots.forEach((d, i) => {
+        if (i === index) {
+          d.className = 'w-3 h-3 rounded-full bg-cyan-600';
+        } else {
+          d.className = 'w-3 h-3 rounded-full bg-slate-300';
+        }
+      });
+      currentSlide = index;
+    }
+
+    if (prevBtn && nextBtn && slides.length > 0) {
+      prevBtn.addEventListener('click', () => {
+        let next = currentSlide - 1;
+        if (next < 0) next = slides.length - 1;
+        showSlide(next);
+      });
+      nextBtn.addEventListener('click', () => {
+        let next = (currentSlide + 1) % slides.length;
+        showSlide(next);
+      });
+      dots.forEach((dot, idx) => {
+        dot.addEventListener('click', () => showSlide(idx));
+      });
+    }
+  </script>
+
+  <!-- External Script Engine for Scroll to Top & Global Enhancements -->
+  <script src="js/script.js"></script>
+</body>
+</html>

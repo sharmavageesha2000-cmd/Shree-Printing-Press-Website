@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Shree Printing Press - Story, Mission & Technology</title>
+  <meta name="description" content="Learn about Shree Printing Press: Company Story, Mission, Vision, 15+ years experience, modern printing technology, expert team, and core values. Operating Mon-Sat 10:00 am to 8:00 pm.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Google Fonts: Outfit (Headings) + Plus Jakarta Sans (Body) + Space Grotesk (Accents) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS v3 Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            body: ['"Plus Jakarta Sans"', 'sans-serif'],
+            accent: ['"Space Grotesk"', 'sans-serif']
+          },
+          colors: {
+            brand: {
+              cyan: '#00B4D8',
+              magenta: '#E60067',
+              yellow: '#F59E0B',
+              dark: '#0F172A',
+              navy: '#1E293B',
+              royal: '#2563EB',
+              purple: '#7C3AED'
+            },
+            cmyk: {
+              c: '#00B4D8',
+              m: '#E60067',
+              y: '#F59E0B',
+              k: '#0F172A'
+            }
+          },
+          animation: {
+            'gradient-x': 'gradientX 6s ease infinite'
+          },
+          keyframes: {
+            gradientX: {
+              '0%, 100%': { 'background-size': '200% 200%', 'background-position': 'left center' },
+              '50%': { 'background-size': '200% 200%', 'background-position': 'right center' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .bg-cmyk-stripe {
+      background: linear-gradient(90deg, #00B4D8 0%, #00B4D8 25%, #E60067 25%, #E60067 50%, #F59E0B 50%, #F59E0B 75%, #0F172A 75%, #0F172A 100%);
+    }
+    .mobile-menu-open {
+      max-height: 520px !important;
+      opacity: 1 !important;
+      pointer-events: auto !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Top CMYK Dynamic Spectrum Bar -->
+  <div class="h-1.5 w-full bg-cmyk-stripe relative z-50"></div>
+
+  <!-- Announcement Bar (Light Theme) -->
+  <div class="bg-white border-b border-slate-200/80 py-2.5 px-4 text-xs font-accent text-slate-600">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-cyan-50 text-cyan-700 border border-cyan-200">
+          <span class="w-1.5 h-1.5 rounded-full bg-cyan-500 animate-ping"></span>
+          LIVE PRESS FACILITY
+        </span>
+        <span class="hidden sm:inline text-slate-500">Heidelberg Speedmaster & HP Indigo units online • 24H Rush Orders Accepted</span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-600 font-medium">
+        <span class="flex items-center gap-1">
+          <span class="text-amber-500">🕒</span> Mon-Sat 10:00 am - 8:00 pm
+        </span>
+        <a href="tel:8005557746" class="hover:text-brand-magenta transition-colors flex items-center gap-1 font-bold text-slate-900">
+          <span class="text-brand-magenta">📞</span> (800) 555-PRINT
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header (Light Theme) -->
+  <header class="header sticky top-0 z-40 backdrop-blur-xl bg-white/90 border-b border-slate-200/80 transition-all duration-300 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo & Brand Name -->
+        <a href="index.html" class="logo flex items-center gap-3.5 group" aria-label="Shree Printing Press Home">
+          <div class="relative">
+            <div class="absolute -inset-1 bg-gradient-to-r from-brand-cyan via-brand-magenta to-brand-yellow rounded-2xl blur-sm opacity-60 group-hover:opacity-100 transition duration-300"></div>
+            <img src="images/logo.png" alt="Shree Printing Press Logo" class="relative w-12 h-12 rounded-xl object-contain bg-white p-0.5 shadow-md border border-slate-200 transform group-hover:scale-105 transition duration-300">
+          </div>
+          <div class="flex flex-col">
+            <span class="font-heading font-black text-2xl tracking-tight text-slate-900 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-brand-cyan group-hover:via-brand-magenta group-hover:to-brand-yellow group-hover:bg-clip-text transition-all duration-300">
+              SHREE <span class="text-brand-magenta">PRESS</span>
+            </span>
+            <span class="font-accent text-[10px] tracking-[0.26em] text-cyan-600 font-bold uppercase -mt-1 flex items-center gap-1">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+              COMMERCIAL PRINTING
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-1 xl:gap-2" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">Home</a>
+          <a href="about.html" class="nav-link active px-3.5 py-2 rounded-xl text-sm font-semibold text-cyan-700 bg-cyan-50/80 border border-cyan-200/60 shadow-sm">About Us</a>
+          <a href="services.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">Services</a>
+          <a href="portfolio.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">Portfolio</a>
+          <a href="products.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">Products</a>
+          <a href="testimonials.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">Testimonials</a>
+          <a href="faq.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">FAQ</a>
+          <a href="contact.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">Contact</a>
+        </nav>
+
+        <!-- Header CTA Actions -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="contact.html" class="relative group overflow-hidden rounded-xl p-px font-heading font-bold text-sm">
+            <span class="absolute inset-0 bg-gradient-to-r from-brand-cyan via-brand-magenta to-brand-yellow rounded-xl animate-gradient-x"></span>
+            <span class="relative block px-5 py-2.5 rounded-[11px] bg-slate-900 text-white group-hover:bg-opacity-0 transition-all duration-300 shadow-md">
+              ✨ Get Free Quote
+            </span>
+          </a>
+        </div>
+
+        <!-- Mobile Toggle Button -->
+        <div class="flex lg:hidden items-center">
+          <button id="mobileToggleBtn" class="mobile-toggle p-2.5 rounded-xl bg-slate-100 text-slate-800 hover:bg-slate-200 transition-all text-xl" aria-label="Toggle navigation menu" aria-expanded="false">
+            ☰
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="nav-menu lg:hidden max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out bg-white border-b border-slate-200 px-4 py-0">
+      <div class="flex flex-col gap-1 py-4">
+        <a href="index.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">Home</a>
+        <a href="about.html" class="px-4 py-2.5 rounded-xl text-sm font-semibold text-cyan-700 bg-cyan-50">About Us</a>
+        <a href="services.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">Services</a>
+        <a href="portfolio.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">Portfolio</a>
+        <a href="products.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">Products</a>
+        <a href="testimonials.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">Testimonials</a>
+        <a href="faq.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">FAQ</a>
+        <a href="contact.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">Contact</a>
+        <div class="pt-3 border-t border-slate-200 mt-2 flex flex-col gap-2">
+          <a href="contact.html" class="w-full text-center py-3 rounded-xl bg-gradient-to-r from-brand-cyan to-brand-magenta text-white font-bold text-sm shadow-md">
+            Get Instant Free Quote
+          </a>
+          <a href="tel:8005557746" class="w-full text-center py-2.5 rounded-xl bg-slate-100 text-slate-700 text-sm font-medium">
+            📞 Call (800) 555-PRINT
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Subpage Hero -->
+  <section class="hero" style="padding-bottom: 3.5rem;">
+    <div class="container" style="text-align: center; max-width: 800px;">
+      <span class="badge">Our Heritage & Leadership</span>
+      <h1>Mastering Craftsmanship & <span class="highlight">Print Technology</span></h1>
+      <p class="hero-description" style="margin-left: auto; margin-right: auto;">
+        Discover the story, values, mission, and industrial technology behind Shree Printing Press. Operating Mon-Sat 10:00 am to 8:00 pm.
+      </p>
+    </div>
+  </section>
+
+  <!-- 1. Company Story & Experience -->
+  <section class="section">
+    <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+      <div>
+        <span class="badge badge-secondary">15+ Years Industrial Experience</span>
+        <h2 style="margin-bottom: 1.5rem;">Our Company Story</h2>
+        <p>Founded in 2011 with a single offset machine and a vision for color perfection, Shree Printing Press has grown into a leading commercial printing facility spanning 25,000 square feet.</p>
+        <p>Over the past 15 years, we have printed over 25 million pages annually, serving corporate enterprises, publishing houses, design agencies, retail brands, and thousands of individuals celebrating life's key moments with custom wedding cards and event invitations.</p>
+        <p>Our relentless commitment to color accuracy, fast turnaround, and friendly customer care has earned us an industry-wide reputation for excellence.</p>
+      </div>
+
+      <div class="hero-img-wrapper">
+        <img src="images/services/offset-printing.png" alt="Print Facility Press Machinery">
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Mission & Vision -->
+  <section class="section section-bg-alt">
+    <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem;">
+      <div class="card card-hover" style="border-top: 5px solid var(--primary);">
+        <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">🎯</div>
+        <h3 style="margin-bottom: 1rem;">Our Mission</h3>
+        <p>To empower businesses and individuals with top-tier, vibrant, and precise physical print media that elevates brand authority, inspires audiences, and communicates quality effortlessly—all delivered on time at affordable pricing.</p>
+      </div>
+
+      <div class="card card-hover" style="border-top: 5px solid var(--secondary);">
+        <div style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 1rem;">👁️</div>
+        <h3 style="margin-bottom: 1rem;">Our Vision</h3>
+        <p>To be the world’s most trusted commercial printing press, setting global benchmarks in eco-friendly paper sourcing, automated pre-press color profiling, and high-speed digital printing innovation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Modern Printing Technology -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">State-Of-The-Art Equipment</span>
+        <h2 class="section-title">Modern Printing Technology</h2>
+        <p class="section-subtitle">We continuously invest in world-class industrial press machinery to ensure top-notch print fidelity and rapid delivery.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="card card-hover">
+          <div style="font-size: 2.2rem; color: var(--primary); margin-bottom: 1rem;">⚙️</div>
+          <h3>Heidelberg Speedmaster XL 106</h3>
+          <p>8-color commercial offset press with automated plate changing and inline spectrophotometric color controls operating up to 18,000 sheets/hour.</p>
+        </div>
+
+        <div class="card card-hover">
+          <div style="font-size: 2.2rem; color: var(--secondary); margin-bottom: 1rem;">💻</div>
+          <h3>HP Indigo 12000 Digital Press</h3>
+          <p>B2-format digital press delivering offset-matching print quality with variable data personalization, metallic inks, and 400 GSM card stock capability.</p>
+        </div>
+
+        <div class="card card-hover">
+          <div style="font-size: 2.2rem; color: var(--primary); margin-bottom: 1rem;">✂️</div>
+          <h3>Precision Die-Cutting & Binding</h3>
+          <p>Automated MBO folding, Horizon saddle stitching, perfect book binding, and custom steel-rule die-cutting for luxury packaging.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Company Values -->
+  <section class="section section-bg-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-secondary">Guiding Principles</span>
+        <h2 class="section-title">Our Core Company Values</h2>
+        <p class="section-subtitle">The beliefs and standards that drive our daily operations and customer relationships.</p>
+      </div>
+
+      <div class="services-card-grid">
+        <div class="card card-hover">
+          <div class="service-icon-wrapper">✨</div>
+          <h3>Precision & Quality</h3>
+          <p>We accept nothing less than 100% color accuracy, sharp typography, and perfect trim alignment.</p>
+        </div>
+
+        <div class="card card-hover">
+          <div class="service-icon-wrapper">⚡</div>
+          <h3>Speed & Reliability</h3>
+          <p>We respect your deadlines. Over 99.8% of our orders dispatch on or ahead of scheduled promise dates.</p>
+        </div>
+
+        <div class="card card-hover">
+          <div class="service-icon-wrapper">🌿</div>
+          <h3>Environmental Care</h3>
+          <p>100% soy-based non-toxic inks, FSC-certified eco paper stocks, and chemical-free thermal plate processing.</p>
+        </div>
+
+        <div class="card card-hover">
+          <div class="service-icon-wrapper">🤝</div>
+          <h3>Customer First</h3>
+          <p>Transparent pricing, clear communication, free prepress proofing, and dedicated support Mon-Sat 10:00 am to 8:00 pm.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color: #FFFFFF;" aria-label="Shree Printing Press Footer">
+            <img src="images/logo.png" alt="Shree Printing Press Logo" class="logo-img">
+            <div>Shree <span>Printing Press</span></div>
+          </a>
+          <p>We deliver premium quality printing services including offset printing, digital printing, business stationery, wedding cards, banners, packaging, and custom printing.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Printing Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Commercial Offset</a></li>
+            <li><a href="services.html">Digital On-Demand</a></li>
+            <li><a href="services.html">Custom Packaging</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contact</h4>
+          <p style="color: #94A3B8;">📞 (800) 555-PRINT</p>
+          <p style="color: #94A3B8;">🕒 Mon-Sat 10:00 am to 8:00 pm</p>
+          <p style="color: #94A3B8;">✉️ info@shreeprintingpress.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Shree Printing Press. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+  <script>
+    const mobileBtn = document.getElementById('mobileToggleBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => {
+        const isOpen = mobileMenu.classList.contains('mobile-menu-open');
+        if (isOpen) {
+          mobileMenu.classList.remove('mobile-menu-open');
+          mobileBtn.innerHTML = '☰';
+          mobileBtn.setAttribute('aria-expanded', 'false');
+        } else {
+          mobileMenu.classList.add('mobile-menu-open');
+          mobileBtn.innerHTML = '✕';
+          mobileBtn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

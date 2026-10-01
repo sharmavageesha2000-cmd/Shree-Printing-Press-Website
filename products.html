@@ -1,0 +1,397 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Printable Products | Shree Printing Press - Catalog & Pricing</title>
+  <meta name="description" content="Explore printable products by Shree Printing Press: Business Cards, Letterheads, Brochures, Catalogs, Flyers, Wedding Cards, Banners, Stickers, Packaging Boxes, and Paper Bags. Operating Mon-Sat 10:00 am to 8:00 pm.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Google Fonts: Outfit (Headings) + Plus Jakarta Sans (Body) + Space Grotesk (Accents) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS v3 Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            body: ['"Plus Jakarta Sans"', 'sans-serif'],
+            accent: ['"Space Grotesk"', 'sans-serif']
+          },
+          colors: {
+            brand: {
+              cyan: '#00B4D8',
+              magenta: '#E60067',
+              yellow: '#F59E0B',
+              dark: '#0F172A',
+              navy: '#1E293B',
+              royal: '#2563EB',
+              purple: '#7C3AED'
+            },
+            cmyk: {
+              c: '#00B4D8',
+              m: '#E60067',
+              y: '#F59E0B',
+              k: '#0F172A'
+            }
+          },
+          animation: {
+            'gradient-x': 'gradientX 6s ease infinite'
+          },
+          keyframes: {
+            gradientX: {
+              '0%, 100%': { 'background-size': '200% 200%', 'background-position': 'left center' },
+              '50%': { 'background-size': '200% 200%', 'background-position': 'right center' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .bg-cmyk-stripe {
+      background: linear-gradient(90deg, #00B4D8 0%, #00B4D8 25%, #E60067 25%, #E60067 50%, #F59E0B 50%, #F59E0B 75%, #0F172A 75%, #0F172A 100%);
+    }
+    .mobile-menu-open {
+      max-height: 520px !important;
+      opacity: 1 !important;
+      pointer-events: auto !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Top CMYK Dynamic Spectrum Bar -->
+  <div class="h-1.5 w-full bg-cmyk-stripe relative z-50"></div>
+
+  <!-- Announcement Bar (Light Theme) -->
+  <div class="bg-white border-b border-slate-200/80 py-2.5 px-4 text-xs font-accent text-slate-600">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-cyan-50 text-cyan-700 border border-cyan-200">
+          <span class="w-1.5 h-1.5 rounded-full bg-cyan-500 animate-ping"></span>
+          LIVE PRESS FACILITY
+        </span>
+        <span class="hidden sm:inline text-slate-500">Heidelberg Speedmaster & HP Indigo units online • 24H Rush Orders Accepted</span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-600 font-medium">
+        <span class="flex items-center gap-1">
+          <span class="text-amber-500">🕒</span> Mon-Sat 10:00 am - 8:00 pm
+        </span>
+        <a href="tel:8005557746" class="hover:text-brand-magenta transition-colors flex items-center gap-1 font-bold text-slate-900">
+          <span class="text-brand-magenta">📞</span> (800) 555-PRINT
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header (Light Theme) -->
+  <header class="header sticky top-0 z-40 backdrop-blur-xl bg-white/90 border-b border-slate-200/80 transition-all duration-300 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo & Brand Name -->
+        <a href="index.html" class="logo flex items-center gap-3.5 group" aria-label="Shree Printing Press Home">
+          <div class="relative">
+            <div class="absolute -inset-1 bg-gradient-to-r from-brand-cyan via-brand-magenta to-brand-yellow rounded-2xl blur-sm opacity-60 group-hover:opacity-100 transition duration-300"></div>
+            <img src="images/logo.png" alt="Shree Printing Press Logo" class="relative w-12 h-12 rounded-xl object-contain bg-white p-0.5 shadow-md border border-slate-200 transform group-hover:scale-105 transition duration-300">
+          </div>
+          <div class="flex flex-col">
+            <span class="font-heading font-black text-2xl tracking-tight text-slate-900 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-brand-cyan group-hover:via-brand-magenta group-hover:to-brand-yellow group-hover:bg-clip-text transition-all duration-300">
+              SHREE <span class="text-brand-magenta">PRESS</span>
+            </span>
+            <span class="font-accent text-[10px] tracking-[0.26em] text-cyan-600 font-bold uppercase -mt-1 flex items-center gap-1">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+              COMMERCIAL PRINTING
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-1 xl:gap-2" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">Home</a>
+          <a href="about.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">About Us</a>
+          <a href="services.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">Services</a>
+          <a href="portfolio.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">Portfolio</a>
+          <a href="products.html" class="nav-link active px-3.5 py-2 rounded-xl text-sm font-semibold text-cyan-700 bg-cyan-50/80 border border-cyan-200/60 shadow-sm">Products</a>
+          <a href="testimonials.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">Testimonials</a>
+          <a href="faq.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">FAQ</a>
+          <a href="contact.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">Contact</a>
+        </nav>
+
+        <!-- Header CTA Actions -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="contact.html" class="relative group overflow-hidden rounded-xl p-px font-heading font-bold text-sm">
+            <span class="absolute inset-0 bg-gradient-to-r from-brand-cyan via-brand-magenta to-brand-yellow rounded-xl animate-gradient-x"></span>
+            <span class="relative block px-5 py-2.5 rounded-[11px] bg-slate-900 text-white group-hover:bg-opacity-0 transition-all duration-300 shadow-md">
+              ✨ Get Free Quote
+            </span>
+          </a>
+        </div>
+
+        <!-- Mobile Toggle Button -->
+        <div class="flex lg:hidden items-center">
+          <button id="mobileToggleBtn" class="mobile-toggle p-2.5 rounded-xl bg-slate-100 text-slate-800 hover:bg-slate-200 transition-all text-xl" aria-label="Toggle navigation menu" aria-expanded="false">
+            ☰
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="nav-menu lg:hidden max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out bg-white border-b border-slate-200 px-4 py-0">
+      <div class="flex flex-col gap-1 py-4">
+        <a href="index.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">Home</a>
+        <a href="about.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">About Us</a>
+        <a href="services.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">Services</a>
+        <a href="portfolio.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">Portfolio</a>
+        <a href="products.html" class="px-4 py-2.5 rounded-xl text-sm font-semibold text-cyan-700 bg-cyan-50">Products</a>
+        <a href="testimonials.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">Testimonials</a>
+        <a href="faq.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">FAQ</a>
+        <a href="contact.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">Contact</a>
+        <div class="pt-3 border-t border-slate-200 mt-2 flex flex-col gap-2">
+          <a href="contact.html" class="w-full text-center py-3 rounded-xl bg-gradient-to-r from-brand-cyan to-brand-magenta text-white font-bold text-sm shadow-md">
+            Get Instant Free Quote
+          </a>
+          <a href="tel:8005557746" class="w-full text-center py-2.5 rounded-xl bg-slate-100 text-slate-700 text-sm font-medium">
+            📞 Call (800) 555-PRINT
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Header -->
+  <section class="hero" style="padding-bottom: 3.5rem;">
+    <div class="container" style="text-align: center; max-width: 800px;">
+      <span class="badge">Commercial Product Catalog</span>
+      <h1>Printable Products <span class="highlight">& Media Solutions</span></h1>
+      <p class="hero-description" style="margin-left: auto; margin-right: auto;">
+        Browse our catalog of custom printable products for corporate branding, retail packaging, events, and personal celebrations. Operating Mon-Sat 10:00 am to 8:00 pm.
+      </p>
+    </div>
+  </section>
+
+  <!-- Printable Product Cards Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="services-grid">
+
+        <!-- 1. Business Cards -->
+        <div class="card card-hover" style="display: flex; flex-direction: column;">
+          <div class="service-img">
+            <img src="images/portfolio/luxury-cards.png" alt="Business Cards">
+          </div>
+          <span class="badge" style="width: fit-content;">Corporate</span>
+          <h3 style="margin-top: 0.5rem; margin-bottom: 0.5rem;">Business & Visiting Cards</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Ultra-thick 400 GSM cardstock, gold foil stamping, velvet matte finish, and metallic edge gilding.</p>
+          <div style="margin-top: auto; display: flex; align-items: center; justify-content: space-between;">
+            <strong style="color: var(--primary); font-size: 1.1rem;">From $25 / 100 pcs</strong>
+            <a href="contact.html" class="btn btn-secondary btn-sm">Order Now</a>
+          </div>
+        </div>
+
+        <!-- 2. Letterheads -->
+        <div class="card card-hover" style="display: flex; flex-direction: column;">
+          <div class="service-img">
+            <img src="images/services/digital-printing.png" alt="Executive Letterheads">
+          </div>
+          <span class="badge badge-secondary" style="width: fit-content;">Stationery</span>
+          <h3 style="margin-top: 0.5rem; margin-bottom: 0.5rem;">Executive Letterheads</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">100 GSM premium bond paper compatible with office printers. Watermarked & foil logo options.</p>
+          <div style="margin-top: auto; display: flex; align-items: center; justify-content: space-between;">
+            <strong style="color: var(--primary); font-size: 1.1rem;">From $35 / 250 pcs</strong>
+            <a href="contact.html" class="btn btn-secondary btn-sm">Order Now</a>
+          </div>
+        </div>
+
+        <!-- 3. Brochures -->
+        <div class="card card-hover" style="display: flex; flex-direction: column;">
+          <div class="service-img">
+            <img src="images/products/brochures.png" alt="Marketing Brochures">
+          </div>
+          <span class="badge" style="width: fit-content;">Marketing</span>
+          <h3 style="margin-top: 0.5rem; margin-bottom: 0.5rem;">Tri-Fold Brochures</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Glossy 300 GSM artbook paper in tri-fold, bi-fold, or z-fold options with spot UV accents.</p>
+          <div style="margin-top: auto; display: flex; align-items: center; justify-content: space-between;">
+            <strong style="color: var(--primary); font-size: 1.1rem;">From $45 / 500 pcs</strong>
+            <a href="contact.html" class="btn btn-secondary btn-sm">Order Now</a>
+          </div>
+        </div>
+
+        <!-- 4. Catalogs -->
+        <div class="card card-hover" style="display: flex; flex-direction: column;">
+          <div class="service-img">
+            <img src="images/services/digital-printing.png" alt="Product Catalogs & Books">
+          </div>
+          <span class="badge badge-secondary" style="width: fit-content;">Publishing</span>
+          <h3 style="margin-top: 0.5rem; margin-bottom: 0.5rem;">Product Catalogs & Books</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Saddle-stitched or perfect bound catalogs with soft-touch laminated covers and high-resolution CMYK pages.</p>
+          <div style="margin-top: auto; display: flex; align-items: center; justify-content: space-between;">
+            <strong style="color: var(--primary); font-size: 1.1rem;">From $6.20 / book</strong>
+            <a href="contact.html" class="btn btn-secondary btn-sm">Order Now</a>
+          </div>
+        </div>
+
+        <!-- 5. Flyers -->
+        <div class="card card-hover" style="display: flex; flex-direction: column;">
+          <div class="service-img">
+            <img src="images/services/offset-printing.png" alt="Promotional Flyers">
+          </div>
+          <span class="badge" style="width: fit-content;">Promotional</span>
+          <h3 style="margin-top: 0.5rem; margin-bottom: 0.5rem;">Flyers & Handbills</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Single or double-sided full-color flyers printed on 150 GSM to 300 GSM art paper for event distribution.</p>
+          <div style="margin-top: auto; display: flex; align-items: center; justify-content: space-between;">
+            <strong style="color: var(--primary); font-size: 1.1rem;">From $20 / 500 pcs</strong>
+            <a href="contact.html" class="btn btn-secondary btn-sm">Order Now</a>
+          </div>
+        </div>
+
+        <!-- 6. Wedding Cards -->
+        <div class="card card-hover" style="display: flex; flex-direction: column;">
+          <div class="service-img">
+            <img src="images/services/offset-printing.png" alt="Wedding Cards & Invitations">
+          </div>
+          <span class="badge badge-secondary" style="width: fit-content;">Invitations</span>
+          <h3 style="margin-top: 0.5rem; margin-bottom: 0.5rem;">Wedding & Invitation Cards</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Bespoke wedding cards with laser die-cutting, metallic gold foil stamping, and luxury velvet envelopes.</p>
+          <div style="margin-top: auto; display: flex; align-items: center; justify-content: space-between;">
+            <strong style="color: var(--primary); font-size: 1.1rem;">From $1.20 / card</strong>
+            <a href="contact.html" class="btn btn-secondary btn-sm">Order Now</a>
+          </div>
+        </div>
+
+        <!-- 7. Banners -->
+        <div class="card card-hover" style="display: flex; flex-direction: column;">
+          <div class="service-img">
+            <img src="images/products/banners.png" alt="Roll-up Vinyl Banners">
+          </div>
+          <span class="badge" style="width: fit-content;">Large Format</span>
+          <h3 style="margin-top: 0.5rem; margin-bottom: 0.5rem;">Retractable Vinyl Banners</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Weatherproof 13 oz / 18 oz vinyl banners complete with retractable aluminum stand and padded travel bag.</p>
+          <div style="margin-top: auto; display: flex; align-items: center; justify-content: space-between;">
+            <strong style="color: var(--primary); font-size: 1.1rem;">From $65 / unit</strong>
+            <a href="contact.html" class="btn btn-secondary btn-sm">Order Now</a>
+          </div>
+        </div>
+
+        <!-- 8. Stickers -->
+        <div class="card card-hover" style="display: flex; flex-direction: column;">
+          <div class="service-img">
+            <img src="images/portfolio/luxury-cards.png" alt="Die-Cut Vinyl Stickers">
+          </div>
+          <span class="badge badge-secondary" style="width: fit-content;">Labels</span>
+          <h3 style="margin-top: 0.5rem; margin-bottom: 0.5rem;">Die-Cut Vinyl Stickers</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Waterproof, UV-resistant vinyl stickers, holographic decals, and product bottle labels.</p>
+          <div style="margin-top: auto; display: flex; align-items: center; justify-content: space-between;">
+            <strong style="color: var(--primary); font-size: 1.1rem;">From $18 / 100 pcs</strong>
+            <a href="contact.html" class="btn btn-secondary btn-sm">Order Now</a>
+          </div>
+        </div>
+
+        <!-- 9. Packaging Boxes -->
+        <div class="card card-hover" style="display: flex; flex-direction: column;">
+          <div class="service-img">
+            <img src="images/products/custom-boxes.png" alt="Custom Packaging Boxes">
+          </div>
+          <span class="badge" style="width: fit-content;">Packaging</span>
+          <h3 style="margin-top: 0.5rem; margin-bottom: 0.5rem;">Custom Packaging Boxes</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Rigid cardboard retail boxes, mailers, and gift packaging with magnetic lids and embossed foil logos.</p>
+          <div style="margin-top: auto; display: flex; align-items: center; justify-content: space-between;">
+            <strong style="color: var(--primary); font-size: 1.1rem;">From $1.80 / box</strong>
+            <a href="contact.html" class="btn btn-secondary btn-sm">Order Now</a>
+          </div>
+        </div>
+
+        <!-- 10. Paper Bags -->
+        <div class="card card-hover" style="display: flex; flex-direction: column;">
+          <div class="service-img">
+            <img src="images/products/custom-boxes.png" alt="Custom Printed Paper Bags">
+          </div>
+          <span class="badge badge-secondary" style="width: fit-content;">Retail</span>
+          <h3 style="margin-top: 0.5rem; margin-bottom: 0.5rem;">Custom Printed Paper Bags</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Eco-friendly Kraft paper shopping bags and luxury laminated boutique bags with rope handles.</p>
+          <div style="margin-top: auto; display: flex; align-items: center; justify-content: space-between;">
+            <strong style="color: var(--primary); font-size: 1.1rem;">From $0.85 / bag</strong>
+            <a href="contact.html" class="btn btn-secondary btn-sm">Order Now</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color: #FFFFFF;">
+            <img src="images/logo.png" alt="Shree Printing Press Logo" class="logo-img">
+            <div>Shree <span>Printing Press</span></div>
+          </a>
+          <p>Your premier commercial printing partner for offset, digital press, custom packaging, and large format banners.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Our Press</a></li>
+            <li><a href="services.html">Services & Specs</a></li>
+            <li><a href="portfolio.html">Featured Work</a></li>
+            <li><a href="products.html">Product Catalog</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Printing Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Commercial Offset</a></li>
+            <li><a href="services.html">Digital On-Demand</a></li>
+            <li><a href="services.html">Custom Packaging</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contact</h4>
+          <p style="color: #94A3B8;">📞 (800) 555-PRINT</p>
+          <p style="color: #94A3B8;">🕒 Mon-Sat 10:00 am to 8:00 pm</p>
+          <p style="color: #94A3B8;">✉️ info@shreeprintingpress.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Shree Printing Press. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+  <script>
+    const mobileBtn = document.getElementById('mobileToggleBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => {
+        const isOpen = mobileMenu.classList.contains('mobile-menu-open');
+        if (isOpen) {
+          mobileMenu.classList.remove('mobile-menu-open');
+          mobileBtn.innerHTML = '☰';
+          mobileBtn.setAttribute('aria-expanded', 'false');
+        } else {
+          mobileMenu.classList.add('mobile-menu-open');
+          mobileBtn.innerHTML = '✕';
+          mobileBtn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
+

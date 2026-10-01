@@ -1,0 +1,18 @@
+services:
+  # Static Site Deployment (Instant, Global CDN, 100% Free Forever, No Sleep)
+  - type: static
+    name: shree-printing-press
+    buildCommand: ""
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: false
+
+  # Web Service Deployment (Node.js running serve.js)
+  - type: web
+    name: shree-printing-press-service
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node serve.js
+    envVars:
+      - key: NODE_ENV
+        value: production

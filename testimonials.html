@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Testimonials | Shree Printing Press - Client Reviews</title>
+  <meta name="description" content="Read reviews and star ratings from verified corporate clients, agencies, and businesses who trust Shree Printing Press for commercial printing press services. Operating Mon-Sat 10:00 am to 8:00 pm.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Google Fonts: Outfit (Headings) + Plus Jakarta Sans (Body) + Space Grotesk (Accents) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS v3 Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            body: ['"Plus Jakarta Sans"', 'sans-serif'],
+            accent: ['"Space Grotesk"', 'sans-serif']
+          },
+          colors: {
+            brand: {
+              cyan: '#00B4D8',
+              magenta: '#E60067',
+              yellow: '#F59E0B',
+              dark: '#0F172A',
+              navy: '#1E293B',
+              royal: '#2563EB',
+              purple: '#7C3AED'
+            },
+            cmyk: {
+              c: '#00B4D8',
+              m: '#E60067',
+              y: '#F59E0B',
+              k: '#0F172A'
+            }
+          },
+          animation: {
+            'gradient-x': 'gradientX 6s ease infinite'
+          },
+          keyframes: {
+            gradientX: {
+              '0%, 100%': { 'background-size': '200% 200%', 'background-position': 'left center' },
+              '50%': { 'background-size': '200% 200%', 'background-position': 'right center' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .bg-cmyk-stripe {
+      background: linear-gradient(90deg, #00B4D8 0%, #00B4D8 25%, #E60067 25%, #E60067 50%, #F59E0B 50%, #F59E0B 75%, #0F172A 75%, #0F172A 100%);
+    }
+    .mobile-menu-open {
+      max-height: 520px !important;
+      opacity: 1 !important;
+      pointer-events: auto !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Top CMYK Dynamic Spectrum Bar -->
+  <div class="h-1.5 w-full bg-cmyk-stripe relative z-50"></div>
+
+  <!-- Announcement Bar (Light Theme) -->
+  <div class="bg-white border-b border-slate-200/80 py-2.5 px-4 text-xs font-accent text-slate-600">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-cyan-50 text-cyan-700 border border-cyan-200">
+          <span class="w-1.5 h-1.5 rounded-full bg-cyan-500 animate-ping"></span>
+          LIVE PRESS FACILITY
+        </span>
+        <span class="hidden sm:inline text-slate-500">Heidelberg Speedmaster & HP Indigo units online • 24H Rush Orders Accepted</span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-600 font-medium">
+        <span class="flex items-center gap-1">
+          <span class="text-amber-500">🕒</span> Mon-Sat 10:00 am - 8:00 pm
+        </span>
+        <a href="tel:8005557746" class="hover:text-brand-magenta transition-colors flex items-center gap-1 font-bold text-slate-900">
+          <span class="text-brand-magenta">📞</span> (800) 555-PRINT
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header (Light Theme) -->
+  <header class="header sticky top-0 z-40 backdrop-blur-xl bg-white/90 border-b border-slate-200/80 transition-all duration-300 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo & Brand Name -->
+        <a href="index.html" class="logo flex items-center gap-3.5 group" aria-label="Shree Printing Press Home">
+          <div class="relative">
+            <div class="absolute -inset-1 bg-gradient-to-r from-brand-cyan via-brand-magenta to-brand-yellow rounded-2xl blur-sm opacity-60 group-hover:opacity-100 transition duration-300"></div>
+            <img src="images/logo.png" alt="Shree Printing Press Logo" class="relative w-12 h-12 rounded-xl object-contain bg-white p-0.5 shadow-md border border-slate-200 transform group-hover:scale-105 transition duration-300">
+          </div>
+          <div class="flex flex-col">
+            <span class="font-heading font-black text-2xl tracking-tight text-slate-900 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-brand-cyan group-hover:via-brand-magenta group-hover:to-brand-yellow group-hover:bg-clip-text transition-all duration-300">
+              SHREE <span class="text-brand-magenta">PRESS</span>
+            </span>
+            <span class="font-accent text-[10px] tracking-[0.26em] text-cyan-600 font-bold uppercase -mt-1 flex items-center gap-1">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+              COMMERCIAL PRINTING
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-1 xl:gap-2" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">Home</a>
+          <a href="about.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">About Us</a>
+          <a href="services.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">Services</a>
+          <a href="portfolio.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">Portfolio</a>
+          <a href="products.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">Products</a>
+          <a href="testimonials.html" class="nav-link active px-3.5 py-2 rounded-xl text-sm font-semibold text-cyan-700 bg-cyan-50/80 border border-cyan-200/60 shadow-sm">Testimonials</a>
+          <a href="faq.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">FAQ</a>
+          <a href="contact.html" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100/70 transition-all">Contact</a>
+        </nav>
+
+        <!-- Header CTA Actions -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="contact.html" class="relative group overflow-hidden rounded-xl p-px font-heading font-bold text-sm">
+            <span class="absolute inset-0 bg-gradient-to-r from-brand-cyan via-brand-magenta to-brand-yellow rounded-xl animate-gradient-x"></span>
+            <span class="relative block px-5 py-2.5 rounded-[11px] bg-slate-900 text-white group-hover:bg-opacity-0 transition-all duration-300 shadow-md">
+              ✨ Get Free Quote
+            </span>
+          </a>
+        </div>
+
+        <!-- Mobile Toggle Button -->
+        <div class="flex lg:hidden items-center">
+          <button id="mobileToggleBtn" class="mobile-toggle p-2.5 rounded-xl bg-slate-100 text-slate-800 hover:bg-slate-200 transition-all text-xl" aria-label="Toggle navigation menu" aria-expanded="false">
+            ☰
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="nav-menu lg:hidden max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out bg-white border-b border-slate-200 px-4 py-0">
+      <div class="flex flex-col gap-1 py-4">
+        <a href="index.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">Home</a>
+        <a href="about.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">About Us</a>
+        <a href="services.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">Services</a>
+        <a href="portfolio.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">Portfolio</a>
+        <a href="products.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">Products</a>
+        <a href="testimonials.html" class="px-4 py-2.5 rounded-xl text-sm font-semibold text-cyan-700 bg-cyan-50">Testimonials</a>
+        <a href="faq.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">FAQ</a>
+        <a href="contact.html" class="px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50">Contact</a>
+        <div class="pt-3 border-t border-slate-200 mt-2 flex flex-col gap-2">
+          <a href="contact.html" class="w-full text-center py-3 rounded-xl bg-gradient-to-r from-brand-cyan to-brand-magenta text-white font-bold text-sm shadow-md">
+            Get Instant Free Quote
+          </a>
+          <a href="tel:8005557746" class="w-full text-center py-2.5 rounded-xl bg-slate-100 text-slate-700 text-sm font-medium">
+            📞 Call (800) 555-PRINT
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Header -->
+  <section class="hero" style="padding-bottom: 3.5rem;">
+    <div class="container" style="text-align: center; max-width: 800px;">
+      <span class="badge">Verified Client Feedback</span>
+      <h1>Customer <span class="highlight">Testimonials</span></h1>
+      <p class="hero-description" style="margin-left: auto; margin-right: auto;">
+        Discover how Shree Printing Press helps businesses, publishers, and agencies achieve print perfection. Mon-Sat 10:00 am to 8:00 pm.
+      </p>
+    </div>
+  </section>
+
+  <!-- Rating Summary -->
+  <section class="section section-bg-alt">
+    <div class="container" style="text-align: center; max-width: 720px;">
+      <div style="font-size: 3.5rem; font-weight: 800; font-family: var(--font-heading); color: var(--primary);">4.9 / 5.0</div>
+      <div class="rating-stars" style="justify-content: center; font-size: 1.6rem; margin-top: 0.2rem; margin-bottom: 0.5rem;">★★★★★</div>
+      <p style="font-size: 1.1rem; color: var(--text-main); font-weight: 600;">Based on 1,240+ Verified Corporate Reviews</p>
+    </div>
+  </section>
+
+  <!-- Testimonial Slider Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Featured Reviews</span>
+        <h2 class="section-title">Interactive Testimonial Slider</h2>
+      </div>
+
+      <div class="testimonial-slider-container">
+
+        <!-- Slide 1 -->
+        <div class="testimonial-slide active">
+          <div class="slider-stars">★★★★★</div>
+          <p class="slider-quote">"Shree Printing Press printed 20,000 custom metallic gold foil boxes for our holiday skincare launch. The die-cutting precision and velvet soft-touch finish blew our retail team away! Delivered 2 days ahead of deadline."</p>
+          <div class="slider-client">
+            <div class="slider-avatar">SK</div>
+            <div class="slider-info">
+              <h4>Sophia Kraft</h4>
+              <p>Creative Director, Lumina Cosmetics</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="testimonial-slide">
+          <div class="slider-stars">★★★★★</div>
+          <p class="slider-quote">"As an event planning agency, we frequently need 50+ trade show vinyl banners overnight. Shree Printing Press is our trusted partner. Their color calibration and customer proofing team are unmatched."</p>
+          <div class="slider-client">
+            <div class="slider-avatar">MV</div>
+            <div class="slider-info">
+              <h4>Marcus Vance</h4>
+              <p>Head of Operations, Horizon Events</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="testimonial-slide">
+          <div class="slider-stars">★★★★★</div>
+          <p class="slider-quote">"The 400 GSM copper edge-gilded business cards we ordered received instant compliments from every corporate client we handed them to. Absolute perfection in heavy stock card printing!"</p>
+          <div class="slider-client">
+            <div class="slider-avatar">EL</div>
+            <div class="slider-info">
+              <h4>Elena Lin</h4>
+              <p>Founder, Apex Wealth Advisory</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="testimonial-slide">
+          <div class="slider-stars">★★★★★</div>
+          <p class="slider-quote">"Superfast same-day turnaround on our tri-fold brochures for the tech conference. Their pre-press team caught a resolution error in our PDF artwork and fixed it for free!"</p>
+          <div class="slider-client">
+            <div class="slider-avatar">AK</div>
+            <div class="slider-info">
+              <h4>Amina Khan</h4>
+              <p>Marketing Manager, CloudTech Solutions</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <div class="slider-controls">
+          <button class="slider-btn slider-prev" aria-label="Previous slide">❮</button>
+          <div class="slider-dots"></div>
+          <button class="slider-btn slider-next" aria-label="Next slide">❯</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Grid Section -->
+  <section class="section section-bg-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">All Reviews</span>
+        <h2 class="section-title">More Client Stories</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="card card-hover testimonial-card">
+          <div class="rating-stars">★★★★★</div>
+          <p class="testimonial-quote">"The Pantone spot color matching on our brand cyan was dead on. Excellent customer service from start to delivery."</p>
+          <div class="client-profile">
+            <div class="client-avatar">JR</div>
+            <div class="client-details">
+              <h5>James Rosenthal</h5>
+              <p>VP Marketing, ArchDesign Group</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-hover testimonial-card">
+          <div class="rating-stars">★★★★★</div>
+          <p class="testimonial-quote">"Their eco-recycled paper stocks and soy ink commitment were key reasons we selected Shree Printing Press. High quality and great pricing."</p>
+          <div class="client-profile">
+            <div class="client-avatar">TB</div>
+            <div class="client-details">
+              <h5>Thomas Bennett</h5>
+              <p>Director, EcoLife Goods</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-hover testimonial-card">
+          <div class="rating-stars">★★★★★</div>
+          <p class="testimonial-quote">"Our custom laser-cut wedding cards turned out so gorgeous. All our guests were amazed by the intricate gold foil detail!"</p>
+          <div class="client-profile">
+            <div class="client-avatar">NP</div>
+            <div class="client-details">
+              <h5>Natasha Patel</h5>
+              <p>Verified Private Client</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color: #FFFFFF;">
+            <img src="images/logo.png" alt="Shree Printing Press Logo" class="logo-img">
+            <div>Shree <span>Printing Press</span></div>
+          </a>
+          <p>Your premier commercial printing partner for offset, digital press, custom packaging, and large format banners.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Our Press</a></li>
+            <li><a href="services.html">Services & Specs</a></li>
+            <li><a href="portfolio.html">Featured Work</a></li>
+            <li><a href="products.html">Product Catalog</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Printing Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Commercial Offset</a></li>
+            <li><a href="services.html">Digital On-Demand</a></li>
+            <li><a href="services.html">Custom Packaging</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contact</h4>
+          <p style="color: #94A3B8;">📞 (800) 555-PRINT</p>
+          <p style="color: #94A3B8;">🕒 Mon-Sat 10:00 am to 8:00 pm</p>
+          <p style="color: #94A3B8;">✉️ info@shreeprintingpress.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Shree Printing Press. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+  <script>
+    const mobileBtn = document.getElementById('mobileToggleBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => {
+        const isOpen = mobileMenu.classList.contains('mobile-menu-open');
+        if (isOpen) {
+          mobileMenu.classList.remove('mobile-menu-open');
+          mobileBtn.innerHTML = '☰';
+          mobileBtn.setAttribute('aria-expanded', 'false');
+        } else {
+          mobileMenu.classList.add('mobile-menu-open');
+          mobileBtn.innerHTML = '✕';
+          mobileBtn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
+
